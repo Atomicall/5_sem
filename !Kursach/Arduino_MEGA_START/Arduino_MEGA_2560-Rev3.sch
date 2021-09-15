@@ -1,0 +1,264 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A1 33110 23386
+encoding utf-8
+Sheet 1 1
+Title "Arduino_MEGA_2560-Rev3.sch"
+Date "17 JAN 2018"
+Rev "1.0"
+Comp "Converted to KiCad by Prof. Mayhem"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 15400 12550 0    70   ~ 0
+0
+Text Notes 15400 12450 0    70   ~ 0
+1
+Text Notes 15400 12350 0    70   ~ 0
+2
+Text Notes 15400 12250 0    70   ~ 0
+3
+Text Notes 15400 12150 0    70   ~ 0
+4
+Text Notes 15400 12050 0    70   ~ 0
+5
+Text Notes 15400 11950 0    70   ~ 0
+6
+Text Notes 15400 11850 0    70   ~ 0
+7
+Text Notes 15350 11025 0    70   ~ 0
+15
+Text Notes 15350 11125 0    70   ~ 0
+16
+Text Notes 15350 11225 0    70   ~ 0
+17
+Text Notes 15350 11325 0    70   ~ 0
+18
+Text Notes 15350 11425 0    70   ~ 0
+19
+Text Notes 15350 11525 0    70   ~ 0
+20
+Text Notes 15350 11625 0    70   ~ 0
+21
+Text Notes 15350 10925 0    70   ~ 0
+14
+$Comp
+L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 ADCH1
+U 1 1 5A5FD68B
+P 13900 10950
+F 0 "ADCH1" H 14050 10975 70  0000 L BNN
+F 1 "8x1F-H8.5" H 13651 10450 70  0000 L BNN
+F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 13890 10740 65  0001 L TNN
+F 3 "" H 13900 10950 60  0001 C CNN
+	1    13900 10950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 ADCL1
+U 1 1 5A5FD753
+P 15300 13050
+F 0 "ADCL1" H 15675 12976 70  0000 L BNN
+F 1 "8x1F-H8.5" H 15051 12550 70  0000 L BNN
+F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 15290 12840 65  0001 L TNN
+F 3 "" H 15300 13050 60  0001 C CNN
+	1    15300 13050
+	1    0    0    1   
+$EndComp
+$Comp
+L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 COMMUNICATION1
+U 1 1 5A5FE3D3
+P 15300 11250
+F 0 "COMMUNICATION1" H 15675 11250 70  0000 L BNN
+F 1 "8x1F-H8.5" H 15051 10750 70  0000 L BNN
+F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 15290 11040 65  0001 L TNN
+F 3 "" H 15300 11250 60  0001 C CNN
+	1    15300 11250
+	1    0    0    1   
+$EndComp
+$Comp
+L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 POWER1
+U 1 1 5A600633
+P 12800 12250
+F 0 "POWER1" H 12950 12274 70  0000 L BNN
+F 1 "8x1F-H8.5" H 12550 11750 70  0000 L BNN
+F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 12790 12040 65  0001 L TNN
+F 3 "" H 12800 12250 60  0001 C CNN
+	1    12800 12250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 PWML1
+U 1 1 5A6006FB
+P 15300 12150
+F 0 "PWML1" H 15675 12175 70  0000 L BNN
+F 1 "8x1F-H8.5" H 15051 11650 70  0000 L BNN
+F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 15290 11940 65  0001 L TNN
+F 3 "" H 15300 12150 60  0001 C CNN
+	1    15300 12150
+	1    0    0    1   
+$EndComp
+$Comp
+L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-2X18 XIO1
+U 1 1 5A60444F
+P 12100 10050
+F 0 "XIO1" H 11850 10975 70  0000 L BNN
+F 1 "18x2F-H8.5" H 11851 8950 70  0000 L BNN
+F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_2X18" H 12090 9840 65  0001 L TNN
+F 3 "" H 12100 10050 60  0001 C CNN
+	1    12100 10050
+	-1   0    0    1   
+$EndComp
+Text Label 12700 12150 2    10   ~ 0
++3V3
+Text Label 12700 12250 0    10   ~ 0
++5V
+Text Label 12700 11950 0    10   ~ 0
++5V
+Text Label 11900 10850 0    10   ~ 0
++5V
+Text Label 12200 10850 2    10   ~ 0
++5V
+Text Label 15200 13450 2    10   ~ 0
+ADC0
+Text Label 15200 13350 2    10   ~ 0
+ADC1
+Text Label 15200 13250 2    10   ~ 0
+ADC2
+Text Label 15200 13150 2    10   ~ 0
+ADC3
+Text Label 15200 13050 2    10   ~ 0
+ADC4
+Text Label 15200 12950 2    10   ~ 0
+ADC5
+Text Label 15200 12850 2    10   ~ 0
+ADC6
+Text Label 15200 12750 2    10   ~ 0
+ADC7
+Text Label 14000 11350 0    10   ~ 0
+ADC8
+Text Label 14000 11250 0    10   ~ 0
+ADC9
+Text Label 14000 11150 0    10   ~ 0
+ADC10
+Text Label 14000 11050 0    10   ~ 0
+ADC11
+Text Label 14000 10950 0    10   ~ 0
+ADC12
+Text Label 14000 10850 0    10   ~ 0
+ADC13
+Text Label 14000 10750 0    10   ~ 0
+ADC14
+Text Label 14000 10650 0    10   ~ 0
+ADC15
+Text Label 12700 12350 0    10   ~ 0
+GND
+Text Label 12700 12450 0    10   ~ 0
+GND
+Text Label 11900 9150 0    10   ~ 0
+GND
+Text Label 12200 9150 2    10   ~ 0
+GND
+Text Label 12200 10750 0    10   ~ 0
+PA0
+Text Label 11900 10750 2    10   ~ 0
+PA1
+Text Label 12200 10650 0    10   ~ 0
+PA2
+Text Label 11900 10650 2    10   ~ 0
+PA3
+Text Label 12200 10550 0    10   ~ 0
+PA4
+Text Label 11900 10550 2    10   ~ 0
+PA5
+Text Label 12200 10450 0    10   ~ 0
+PA6
+Text Label 11900 10450 2    10   ~ 0
+PA7
+Text Label 11900 9250 2    10   ~ 0
+PB0
+Text Label 12200 9250 0    10   ~ 0
+PB1
+Text Label 11900 9350 2    10   ~ 0
+PB2
+Text Label 12200 9350 0    10   ~ 0
+PB3
+Text Label 11900 10050 2    10   ~ 0
+PC0
+Text Label 12200 10050 0    10   ~ 0
+PC1
+Text Label 11900 10150 2    10   ~ 0
+PC2
+Text Label 12200 10150 0    10   ~ 0
+PC3
+Text Label 11900 10250 2    10   ~ 0
+PC4
+Text Label 12200 10250 0    10   ~ 0
+PC5
+Text Label 11900 10350 2    10   ~ 0
+PC6
+Text Label 12200 10350 0    10   ~ 0
+PC7
+Text Label 12200 9950 0    10   ~ 0
+PD7
+Text Label 15200 12550 2    10   ~ 0
+PE0
+Text Label 15200 12450 2    10   ~ 0
+PE1
+Text Label 15200 12050 2    10   ~ 0
+PE3
+Text Label 15200 12350 2    10   ~ 0
+PE4
+Text Label 15200 12250 2    10   ~ 0
+PE5
+Text Label 11900 9850 2    10   ~ 0
+PG0
+Text Label 12200 9850 0    10   ~ 0
+PG1
+Text Label 11900 9950 2    10   ~ 0
+PG2
+Text Label 15200 12150 2    10   ~ 0
+PG5
+Text Label 15200 11950 2    10   ~ 0
+PH3
+Text Label 15200 11850 2    10   ~ 0
+PH4
+Text Label 11900 9450 2    10   ~ 0
+PL0
+Text Label 12200 9450 0    10   ~ 0
+PL1
+Text Label 11900 9550 2    10   ~ 0
+PL2
+Text Label 12200 9550 0    10   ~ 0
+PL3
+Text Label 11900 9650 2    10   ~ 0
+PL4
+Text Label 12200 9650 0    10   ~ 0
+PL5
+Text Label 11900 9750 2    10   ~ 0
+PL6
+Text Label 12200 9750 0    10   ~ 0
+PL7
+Text Label 12700 12050 2    10   ~ 0
+RESET
+Text Label 15200 11450 2    10   ~ 0
+RXD1
+Text Label 15200 11250 2    10   ~ 0
+RXD2
+Text Label 15200 11050 2    10   ~ 0
+RXD3
+Text Label 15200 11650 2    10   ~ 0
+SCL
+Text Label 15200 11550 2    10   ~ 0
+SDA
+Text Label 15200 11350 2    10   ~ 0
+TXD1
+Text Label 15200 11150 2    10   ~ 0
+TXD2
+Text Label 15200 10950 2    10   ~ 0
+TXD3
+Text Label 12700 12550 2    10   ~ 0
+VIN
+$EndSCHEMATC
