@@ -1,0 +1,21 @@
+|Block1
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+clk => inst4.CLK
+clk => inst6.CLK
+clk => inst9.CLK
+clk => inst12.CLK
+clk => inst15.CLK
+D0 => inst.DATAIN
+Q1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst4.DATAIN
+Q2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst6.DATAIN
+Q3 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst9.DATAIN
+Q4 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+D4 => inst12.DATAIN
+Q5 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+D5 => inst15.DATAIN
+
+

@@ -1,0 +1,10 @@
+release/main.o
+release/com_port_communication.o
+release/list_ports_linux.o
+release/list_ports_osx.o
+release/list_ports_win.o
+release/unix.o
+release/win.o
+release/serial.o
+release/the_window.o
+release/moc_the_window.o

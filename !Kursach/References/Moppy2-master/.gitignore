@@ -1,0 +1,43 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+*.log.*
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Gradle Artifacts #
+**/.gradle/**
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+#NetBeans Temp Files
+/Java/MoppyLib/.nb-gradle/
+/Java/MoppyLib/build/
+/Java/MoppyDeviceGUI/.nb-gradle/
+/Java/MoppyDeviceGUI/build/
+/Java/*/.nb-gradle-properties
+/Java/MoppyControlGUI/.nb-gradle/
+/Java/MoppyControlGUI/build/
+
+#VS Code Files
+Java/*/.classpath
+Java/*/.project
+Java/*/.settings/org.eclipse.jdt.core.prefs
+Java/*/.settings/org.eclipse.buildship.core.prefs
+Java/MoppyControlGUI/**/*.form
+**/.vscode

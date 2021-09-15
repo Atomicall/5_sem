@@ -1,0 +1,29 @@
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+}
+
+version = '2.1.0'
+
+jar {
+    manifest {
+        attributes ('Implementation-Title': project.name,
+                    'Implementation-Version': version)
+    }
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.fazecast:jSerialComm:2.6.+'
+    api 'org.graalvm.js:js:20.1.+'
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    // Use JUnit test framework
+    //testImplementation 'junit:junit:4.+'
+}

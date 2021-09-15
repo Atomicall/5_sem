@@ -1,0 +1,10 @@
+debug/main.o
+debug/com_port_communication.o
+debug/list_ports_linux.o
+debug/list_ports_osx.o
+debug/list_ports_win.o
+debug/unix.o
+debug/win.o
+debug/serial.o
+debug/the_window.o
+debug/moc_the_window.o
