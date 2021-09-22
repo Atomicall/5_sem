@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 19
+Sheet 17 19
 Title ""
 Date ""
 Rev ""
@@ -43,7 +43,7 @@ AR Path="/6148D267/6143D9DF" Ref="D15"  Part="1"
 AR Path="/61462287/6143D9DF" Ref="D18"  Part="1" 
 AR Path="/614769B2/6143D9DF" Ref="D16"  Part="1" 
 AR Path="/6147D787/6143D9DF" Ref="D17"  Part="1" 
-F 0 "D8" H 2122 1582 50  0000 R CNN
+F 0 "D16" H 2122 1582 50  0000 R CNN
 F 1 "Drive_Connector" H 2122 1673 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2150 1700 50  0001 C CNN
 F 3 "~" H 2150 1700 50  0001 C CNN

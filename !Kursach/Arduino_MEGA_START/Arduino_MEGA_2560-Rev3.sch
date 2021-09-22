@@ -71,7 +71,7 @@ $Comp
 L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 COMMUNICATION1
 U 1 1 5A5FE3D3
 P 6700 3050
-F 0 "COMMUNICATION1" H 7075 3050 70  0000 L BNN
+F 0 "COMMUNICATION1" H 6450 2400 70  0000 L BNN
 F 1 "8x1F-H8.5" H 6451 2550 70  0000 L BNN
 F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 6690 2840 65  0001 L TNN
 F 3 "" H 6700 3050 60  0001 C CNN
@@ -780,10 +780,6 @@ Wire Wire Line
 	7150 4550 7250 4550
 Wire Wire Line
 	7350 4250 6600 4250
-Text Label 7550 4250 0    50   ~ 0
-Led4
-Wire Wire Line
-	7450 4250 7550 4250
 Wire Wire Line
 	6900 4150 6600 4150
 Wire Wire Line
@@ -838,8 +834,6 @@ Wire Wire Line
 	1700 9400 1600 9400
 Wire Wire Line
 	1600 9500 1700 9500
-Text Label 7250 4550 0    50   ~ 0
-Led3
 $Sheet
 S 2700 9500 500  350 
 U 614769B2
@@ -888,4 +882,101 @@ Text Label 6900 3950 0    50   ~ 0
 Dir18
 Text Label 6900 3850 0    50   ~ 0
 Step18
+NoConn ~ 7450 4250
+NoConn ~ 7250 4550
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 61469229
+P 7550 2750
+F 0 "J3" H 7522 2682 50  0000 R CNN
+F 1 "Midi_UART" H 7522 2773 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7550 2750 50  0001 C CNN
+F 3 "~" H 7550 2750 50  0001 C CNN
+	1    7550 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 6146FE40
+P 7550 3100
+F 0 "J4" H 7522 3032 50  0000 R CNN
+F 1 "USB_Uart" H 7522 3123 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7550 3100 50  0001 C CNN
+F 3 "~" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	-1   0    0    1   
+$EndComp
+Text Label 7300 2650 2    10   ~ 0
+TXD3
+Text Label 7300 2750 2    10   ~ 0
+RXD3
+Text Label 7300 3000 2    10   ~ 0
+TXD2
+Text Label 7300 3100 2    10   ~ 0
+RXD2
+Wire Wire Line
+	7350 2650 7300 2650
+Wire Wire Line
+	7350 2750 7300 2750
+Wire Wire Line
+	7350 3000 7300 3000
+Wire Wire Line
+	7350 3100 7300 3100
+$Comp
+L power:GND #PWR0101
+U 1 1 6148674B
+P 7300 3300
+F 0 "#PWR0101" H 7300 3050 50  0001 C CNN
+F 1 "GND" H 7450 3300 50  0000 C CNN
+F 2 "" H 7300 3300 50  0001 C CNN
+F 3 "" H 7300 3300 50  0001 C CNN
+	1    7300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3300 7300 3200
+Wire Wire Line
+	7300 3200 7350 3200
+$Comp
+L power:GND #PWR0102
+U 1 1 6148EAB9
+P 7200 2900
+F 0 "#PWR0102" H 7200 2650 50  0001 C CNN
+F 1 "GND" H 7100 2900 50  0000 C CNN
+F 2 "" H 7200 2900 50  0001 C CNN
+F 3 "" H 7200 2900 50  0001 C CNN
+	1    7200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2900 7200 2850
+Wire Wire Line
+	7200 2850 7350 2850
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 6149D75C
+P 5100 3350
+F 0 "J5" H 5208 3531 50  0000 C CNN
+F 1 "Power_conn" H 5208 3440 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5100 3350 50  0001 C CNN
+F 3 "~" H 5100 3350 50  0001 C CNN
+	1    5100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3350 5550 3350
+Connection ~ 5550 3350
+Wire Wire Line
+	5300 3450 5550 3450
+$Comp
+L 74xx:74HCT595 U?
+U 1 1 614AB632
+P 7950 8250
+F 0 "U?" H 7950 9031 50  0000 C CNN
+F 1 "74HCT595" H 7950 8940 50  0000 C CNN
+F 2 "" H 7950 8250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 7950 8250 50  0001 C CNN
+	1    7950 8250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
