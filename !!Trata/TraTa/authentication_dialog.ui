@@ -25,7 +25,7 @@
    <property name="title">
     <string/>
    </property>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="login_LineEdit">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -35,7 +35,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="pass_LineEdit">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -45,7 +45,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="login_Label">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -58,7 +58,7 @@
      <string>Login</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="pass_Label">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -71,7 +71,7 @@
      <string>Password</string>
     </property>
    </widget>
-   <widget class="QDialogButtonBox" name="buttonBox">
+   <widget class="QDialogButtonBox" name="DialogButtonBox">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -87,7 +87,7 @@
      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="remember_CB">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -105,7 +105,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>buttonBox</sender>
+   <sender>DialogButtonBox</sender>
    <signal>accepted()</signal>
    <receiver>Authentication_dialog</receiver>
    <slot>accept()</slot>
@@ -121,7 +121,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>buttonBox</sender>
+   <sender>DialogButtonBox</sender>
    <signal>rejected()</signal>
    <receiver>Authentication_dialog</receiver>
    <slot>reject()</slot>

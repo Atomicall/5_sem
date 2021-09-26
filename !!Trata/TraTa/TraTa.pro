@@ -1,4 +1,5 @@
 QT       += core gui
+QT += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,17 +10,25 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    auth_dao.cpp \
     authentication_dialog.cpp \
+    dbfacade.cpp \
+    dbfacade_int.cpp \
     main.cpp \
-    da_window.cpp
+    da_window.cpp \
+    tt_dao.cpp
 
 HEADERS += \
+    auth_dao.h \
     authentication_dialog.h \
-    da_window.h
+    da_window.h \
+    dbfacade.h \
+    dbfacade_int.h \
+    tt_dao.h
 
 FORMS += \
     authentication_dialog.ui \
-    da_window.ui
+    #da_window.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

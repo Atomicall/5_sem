@@ -12,3 +12,21 @@ Authentication_dialog::~Authentication_dialog()
 {
     delete ui;
 }
+
+void Authentication_dialog::on_DialogButtonBox_accepted()
+{
+
+}
+
+
+void Authentication_dialog::on_DialogButtonBox_rejected()
+{
+
+}
+
+
+void Authentication_dialog::on_remember_CB_toggled(bool checked)
+{
+
+}
+

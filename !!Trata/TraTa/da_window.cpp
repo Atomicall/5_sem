@@ -1,15 +1,36 @@
 #include "da_window.h"
-#include "ui_da_window.h"
 
-Da_window::Da_window(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::Da_window)
+
+Da_window::Da_window(QWidget *parent) : QMainWindow(parent)
 {
-    ui->setupUi(this);
+    setupUi (this);
+    retranslateUi(this);
+    ttDb = new DBFacade<TT_Dao> (this->DB_Table);
+    connect();
+    activateButtons();
 }
 
-Da_window::~Da_window()
+void Da_window::connect()
 {
-    delete ui;
+
 }
 
+void Da_window::activateButtons()
+{
+
+}
+
+void Da_window::on_Add_clicked()
+{
+
+}
+
+void Da_window::on_Edit_clicked()
+{
+
+}
+
+void Da_window::on_Delete_clicked()
+{
+
+}
