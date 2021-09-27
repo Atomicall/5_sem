@@ -108,7 +108,7 @@ protected:
 
         retranslateUi(Da_window);
 
-        QMetaObject::connectSlotsByName(Da_window);
+        //QMetaObject::connectSlotsByName(Da_window);
     } // setupUi
 
     void retranslateUi(QMainWindow *Da_window)
@@ -120,9 +120,10 @@ protected:
         Add_Button->setText(QCoreApplication::translate("Da_window", "Add Record", nullptr));
         Edit_Button->setText(QCoreApplication::translate("Da_window", "Edit Record", nullptr));
         Delete_Button->setText(QCoreApplication::translate("Da_window", "Delete Record", nullptr));
+
     } // retranslateUi
 
-void connect();
+void _connect();
 void activateButtons();
 
 private:

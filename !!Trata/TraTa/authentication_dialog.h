@@ -16,6 +16,7 @@ public:
     explicit Authentication_dialog(QWidget *parent = nullptr);
     ~Authentication_dialog();
 
+
 private:
     Ui::Authentication_dialog *ui;
 protected:
