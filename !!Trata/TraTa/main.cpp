@@ -7,7 +7,6 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     Authentication_dialog dlg;
-    Da_window w;
-    w.show();
+    dlg.show();
     return a.exec();
 }
