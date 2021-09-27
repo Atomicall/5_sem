@@ -3,9 +3,15 @@
 
 #include <QDialog>
 #include "auth_dao.h"
-#include <dbfacade.h>
+#include "dbfacade.h"
+#include "da_window.h"
+
 namespace Ui {
 class Authentication_dialog;
+enum ISADMIN{
+    NOTADMIN = 0,
+    ADMIN
+};
 }
 
 class Authentication_dialog : public QDialog
@@ -22,6 +28,10 @@ private:
 protected:
     DBFacade<Auth_dao>* authDB;
     Auth_dao mAuthInfo;
+    Da_window* mainwindow = nullptr;
+
+
+    bool check();
 
 private slots:
     void on_DialogButtonBox_accepted();

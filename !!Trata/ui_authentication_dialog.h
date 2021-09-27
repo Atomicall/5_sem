@@ -51,7 +51,7 @@ public:
         login_Label->setGeometry(QRect(50, 30, 47, 13));
         pass_Label = new QLabel(groupBox);
         pass_Label->setObjectName(QString::fromUtf8("pass_Label"));
-        pass_Label->setGeometry(QRect(50, 80, 47, 13));
+        pass_Label->setGeometry(QRect(50, 80, 71, 16));
         DialogButtonBox = new QDialogButtonBox(groupBox);
         DialogButtonBox->setObjectName(QString::fromUtf8("DialogButtonBox"));
         DialogButtonBox->setGeometry(QRect(180, 140, 161, 32));
@@ -62,8 +62,6 @@ public:
         remember_CB->setGeometry(QRect(50, 130, 101, 17));
 
         retranslateUi(Authentication_dialog);
-        QObject::connect(DialogButtonBox, &QDialogButtonBox::accepted, Authentication_dialog, qOverload<>(&QDialog::accept));
-        QObject::connect(DialogButtonBox, &QDialogButtonBox::rejected, Authentication_dialog, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(Authentication_dialog);
     } // setupUi

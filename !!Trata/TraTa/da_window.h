@@ -26,6 +26,7 @@ class Da_window : public QMainWindow
     Q_OBJECT
 public:
     Da_window(QWidget *parent = nullptr);
+    ~Da_window();
 
 public:
     QWidget *centralwidget;
@@ -127,7 +128,7 @@ void _connect();
 void activateButtons();
 
 private:
-    DBFacade<TT_Dao>* ttDb;
+    DBFacade<TT_Dao>* ttDb = nullptr;
     bool isAdmin=0;
 
 protected slots:

@@ -424,6 +424,35 @@ release/moc_authentication_dialog.cpp: TraTa/authentication_dialog.h \
 		C:/Qt/6.1.3/mingw81_64/include/QtSql/qtsqlversion.h \
 		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QTableView \
 		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qtableview.h \
+		TraTa/da_window.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtCore/QVariant \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QApplication \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QHeaderView \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qheaderview.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QMainWindow \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qmainwindow.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtGui/qaction.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QSpacerItem \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QWidget \
+		TraTa/tt_dao.h \
 		release/moc_predefs.h \
 		C:/Qt/6.1.3/mingw81_64/bin/moc.exe
 	C:\Qt\6.1.3\mingw81_64\bin\moc.exe $(DEFINES) --include D:/Labs/5_sem/!!Trata/release/moc_predefs.h -IC:/Qt/6.1.3/mingw81_64/mkspecs/win32-g++ -ID:/Labs/5_sem/!!Trata/TraTa -IC:/Qt/6.1.3/mingw81_64/include -IC:/Qt/6.1.3/mingw81_64/include/QtWidgets -IC:/Qt/6.1.3/mingw81_64/include/QtGui -IC:/Qt/6.1.3/mingw81_64/include/QtSql -IC:/Qt/6.1.3/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include TraTa\authentication_dialog.h -o release\moc_authentication_dialog.cpp
@@ -1397,6 +1426,35 @@ release/authentication_dialog.o: TraTa/authentication_dialog.cpp TraTa/authentic
 		C:/Qt/6.1.3/mingw81_64/include/QtSql/qtsqlversion.h \
 		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QTableView \
 		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qtableview.h \
+		TraTa/da_window.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtCore/QVariant \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QApplication \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QHeaderView \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qheaderview.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QMainWindow \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qmainwindow.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtGui/qaction.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QSpacerItem \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.1.3/mingw81_64/include/QtWidgets/QWidget \
+		TraTa/tt_dao.h \
 		ui_authentication_dialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\authentication_dialog.o TraTa\authentication_dialog.cpp
 
