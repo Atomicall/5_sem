@@ -22,7 +22,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Da_window_t {
     QByteArrayData data[5];
-    char stringdata0[60];
+    char stringdata0[66];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,12 +34,12 @@ static const qt_meta_stringdata_Da_window_t qt_meta_stringdata_Da_window = {
 QT_MOC_LITERAL(0, 0, 9), // "Da_window"
 QT_MOC_LITERAL(1, 10, 14), // "on_Add_clicked"
 QT_MOC_LITERAL(2, 25, 0), // ""
-QT_MOC_LITERAL(3, 26, 15), // "on_Edit_clicked"
-QT_MOC_LITERAL(4, 42, 17) // "on_Delete_clicked"
+QT_MOC_LITERAL(3, 26, 21), // "on_Submit_All_clicked"
+QT_MOC_LITERAL(4, 48, 17) // "on_Delete_clicked"
 
     },
-    "Da_window\0on_Add_clicked\0\0on_Edit_clicked\0"
-    "on_Delete_clicked"
+    "Da_window\0on_Add_clicked\0\0"
+    "on_Submit_All_clicked\0on_Delete_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -76,7 +76,7 @@ void Da_window::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_Add_clicked(); break;
-        case 1: _t->on_Edit_clicked(); break;
+        case 1: _t->on_Submit_All_clicked(); break;
         case 2: _t->on_Delete_clicked(); break;
         default: ;
         }
