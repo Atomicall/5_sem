@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="l1" targetName="l1" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bcc98ff-f149-471f-bf3d-856191a9b601" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1yTKpgv3i0XKsyomQB4scmj5n2Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+  </component>
+  <component name="RunManager">
+    <configuration name="l1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-lpci" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="l1" TARGET_NAME="l1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="l1" RUN_TARGET_NAME="l1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bcc98ff-f149-471f-bf3d-856191a9b601" name="Default Changelist" comment="" />
+      <created>1632270326340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632270326340</updated>
+      <workItem from="1632270515823" duration="688000" />
+      <workItem from="1632344343790" duration="10184000" />
+      <workItem from="1632414829537" duration="2168000" />
+      <workItem from="1632417625800" duration="3082000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="tt" language="ObjectiveC" />
+        <watch expression="s" language="ObjectiveC" />
+        <watch expression="s.str().c_str()" language="ObjectiveC" />
+        <watch expression="buffer" language="ObjectiveC" />
+        <watch expression="g" language="ObjectiveC" />
+        <watch expression="it.path()" language="ObjectiveC" />
+        <watch expression="i" language="ObjectiveC" />
+        <watch expression="g" language="ObjectiveC" />
+        <watch expression="mass[i].d_id" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
