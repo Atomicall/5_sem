@@ -28,7 +28,7 @@ HEADERS += \
 
 FORMS += \
     authentication_dialog.ui \
-    #da_window.ui
+    da_window.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
