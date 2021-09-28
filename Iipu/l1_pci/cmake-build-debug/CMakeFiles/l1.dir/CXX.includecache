@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vlad/proj/l1/main.cpp
+unistd.h
+-
+fstream
+-
+iostream
+-
+filesystem
+-
+pci/pci.h
+/home/vlad/proj/l1/pci/pci.h
+
