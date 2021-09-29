@@ -1,0 +1,300 @@
+Simulator report for L2_2
+Wed Sep 29 18:50:49 2021
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 75 nodes     ;
+; Simulation Coverage         ;      35.96 % ;
+; Total Number of Transitions ; 1534         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Option                                                                                     ; Setting     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Simulation mode                                                                            ; Functional  ; Timing        ;
+; Start time                                                                                 ; 0 ns        ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF        ;               ;
+; Vector input source                                                                        ; BLOCK_1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
+; Check outputs                                                                              ; Off         ; Off           ;
+; Report simulation coverage                                                                 ; On          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
+; Display missing 1-value coverage report                                                    ; On          ; On            ;
+; Display missing 0-value coverage report                                                    ; On          ; On            ;
+; Detect setup and hold time violations                                                      ; Off         ; Off           ;
+; Detect glitches                                                                            ; Off         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
+; Generate Signal Activity File                                                              ; Off         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      35.96 % ;
+; Total nodes checked                                 ; 75           ;
+; Total output ports checked                          ; 89           ;
+; Total output ports with complete 1/0-value coverage ; 32           ;
+; Total output ports with no 1/0-value coverage       ; 47           ;
+; Total output ports with no 1-value coverage         ; 50           ;
+; Total output ports with no 0-value coverage         ; 54           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                     ;
++---------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                           ; Output Port Name                                                                                                       ; Output Port Type ;
++---------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
+; |BLOCK_1|Bl1_OUT                                                                                                    ; |BLOCK_1|Bl1_OUT                                                                                                       ; pin_out          ;
+; |BLOCK_1|CLK                                                                                                        ; |BLOCK_1|CLK                                                                                                           ; out              ;
+; |BLOCK_1|BL1:inst|inst27                                                                                            ; |BLOCK_1|BL1:inst|inst27                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst|inst20                                                                                            ; |BLOCK_1|BL1:inst|inst20                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst|inst22                                                                                            ; |BLOCK_1|BL1:inst|inst22                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst|inst21                                                                                            ; |BLOCK_1|BL1:inst|inst21                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst|inst23                                                                                            ; |BLOCK_1|BL1:inst|inst23                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst|inst25                                                                                            ; |BLOCK_1|BL1:inst|inst25                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst|inst24                                                                                            ; |BLOCK_1|BL1:inst|inst24                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita0   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita0      ; sumout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita0   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1      ; sumout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2      ; sumout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3      ; sumout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4      ; sumout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5      ; sumout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5~COUT ; cout             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6      ; sumout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6~COUT ; cout             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita7   ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita7      ; sumout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[5] ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[5]               ; regout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[4] ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[4]               ; regout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[3] ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[3]               ; regout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[2] ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[2]               ; regout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[1] ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[1]               ; regout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[0] ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[0]               ; regout           ;
+; |BLOCK_1|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout~0                     ; |BLOCK_1|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout~0                        ; out0             ;
+; |BLOCK_1|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout                       ; |BLOCK_1|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout                          ; out0             ;
++---------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                                          ;
++----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                            ; Output Port Name                                                                                                        ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+; |BLOCK_1|inst8~0                                                                                                     ; |BLOCK_1|inst8~0                                                                                                        ; out0             ;
+; |BLOCK_1|inst8~2                                                                                                     ; |BLOCK_1|inst8~2                                                                                                        ; out0             ;
+; |BLOCK_1|N[7]                                                                                                        ; |BLOCK_1|N[7]                                                                                                           ; out              ;
+; |BLOCK_1|N[6]                                                                                                        ; |BLOCK_1|N[6]                                                                                                           ; out              ;
+; |BLOCK_1|N[5]                                                                                                        ; |BLOCK_1|N[5]                                                                                                           ; out              ;
+; |BLOCK_1|N[4]                                                                                                        ; |BLOCK_1|N[4]                                                                                                           ; out              ;
+; |BLOCK_1|N[3]                                                                                                        ; |BLOCK_1|N[3]                                                                                                           ; out              ;
+; |BLOCK_1|N[2]                                                                                                        ; |BLOCK_1|N[2]                                                                                                           ; out              ;
+; |BLOCK_1|N[1]                                                                                                        ; |BLOCK_1|N[1]                                                                                                           ; out              ;
+; |BLOCK_1|N[0]                                                                                                        ; |BLOCK_1|N[0]                                                                                                           ; out              ;
+; |BLOCK_1|M[7]                                                                                                        ; |BLOCK_1|M[7]                                                                                                           ; out              ;
+; |BLOCK_1|M[6]                                                                                                        ; |BLOCK_1|M[6]                                                                                                           ; out              ;
+; |BLOCK_1|M[5]                                                                                                        ; |BLOCK_1|M[5]                                                                                                           ; out              ;
+; |BLOCK_1|M[4]                                                                                                        ; |BLOCK_1|M[4]                                                                                                           ; out              ;
+; |BLOCK_1|M[3]                                                                                                        ; |BLOCK_1|M[3]                                                                                                           ; out              ;
+; |BLOCK_1|M[2]                                                                                                        ; |BLOCK_1|M[2]                                                                                                           ; out              ;
+; |BLOCK_1|M[1]                                                                                                        ; |BLOCK_1|M[1]                                                                                                           ; out              ;
+; |BLOCK_1|M[0]                                                                                                        ; |BLOCK_1|M[0]                                                                                                           ; out              ;
+; |BLOCK_1|BL1:inst4|inst27                                                                                            ; |BLOCK_1|BL1:inst4|inst27                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst20                                                                                            ; |BLOCK_1|BL1:inst4|inst20                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst22                                                                                            ; |BLOCK_1|BL1:inst4|inst22                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst21                                                                                            ; |BLOCK_1|BL1:inst4|inst21                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst23                                                                                            ; |BLOCK_1|BL1:inst4|inst23                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst26                                                                                            ; |BLOCK_1|BL1:inst4|inst26                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst25                                                                                            ; |BLOCK_1|BL1:inst4|inst25                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst19                                                                                            ; |BLOCK_1|BL1:inst4|inst19                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst24                                                                                            ; |BLOCK_1|BL1:inst4|inst24                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita0   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita0      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita7   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita7      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[7] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[7]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[6] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[6]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[5] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[5]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[4] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[4]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[3] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[3]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[2] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[2]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[1] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[1]               ; regout           ;
+; |BLOCK_1|BL1:inst|inst19                                                                                             ; |BLOCK_1|BL1:inst|inst19                                                                                                ; out0             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[7]  ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[7]                ; regout           ;
+; |BLOCK_1|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout~1                      ; |BLOCK_1|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout~1                         ; out0             ;
++----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                                          ;
++----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                            ; Output Port Name                                                                                                        ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+; |BLOCK_1|inst8                                                                                                       ; |BLOCK_1|inst8                                                                                                          ; regout           ;
+; |BLOCK_1|inst8~1                                                                                                     ; |BLOCK_1|inst8~1                                                                                                        ; out0             ;
+; |BLOCK_1|inst8~2                                                                                                     ; |BLOCK_1|inst8~2                                                                                                        ; out0             ;
+; |BLOCK_1|N[7]                                                                                                        ; |BLOCK_1|N[7]                                                                                                           ; out              ;
+; |BLOCK_1|N[6]                                                                                                        ; |BLOCK_1|N[6]                                                                                                           ; out              ;
+; |BLOCK_1|N[5]                                                                                                        ; |BLOCK_1|N[5]                                                                                                           ; out              ;
+; |BLOCK_1|N[4]                                                                                                        ; |BLOCK_1|N[4]                                                                                                           ; out              ;
+; |BLOCK_1|N[3]                                                                                                        ; |BLOCK_1|N[3]                                                                                                           ; out              ;
+; |BLOCK_1|N[2]                                                                                                        ; |BLOCK_1|N[2]                                                                                                           ; out              ;
+; |BLOCK_1|N[1]                                                                                                        ; |BLOCK_1|N[1]                                                                                                           ; out              ;
+; |BLOCK_1|N[0]                                                                                                        ; |BLOCK_1|N[0]                                                                                                           ; out              ;
+; |BLOCK_1|M[7]                                                                                                        ; |BLOCK_1|M[7]                                                                                                           ; out              ;
+; |BLOCK_1|M[6]                                                                                                        ; |BLOCK_1|M[6]                                                                                                           ; out              ;
+; |BLOCK_1|M[5]                                                                                                        ; |BLOCK_1|M[5]                                                                                                           ; out              ;
+; |BLOCK_1|M[4]                                                                                                        ; |BLOCK_1|M[4]                                                                                                           ; out              ;
+; |BLOCK_1|M[3]                                                                                                        ; |BLOCK_1|M[3]                                                                                                           ; out              ;
+; |BLOCK_1|M[2]                                                                                                        ; |BLOCK_1|M[2]                                                                                                           ; out              ;
+; |BLOCK_1|M[1]                                                                                                        ; |BLOCK_1|M[1]                                                                                                           ; out              ;
+; |BLOCK_1|M[0]                                                                                                        ; |BLOCK_1|M[0]                                                                                                           ; out              ;
+; |BLOCK_1|BL1:inst4|inst27                                                                                            ; |BLOCK_1|BL1:inst4|inst27                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst22                                                                                            ; |BLOCK_1|BL1:inst4|inst22                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst21                                                                                            ; |BLOCK_1|BL1:inst4|inst21                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst23                                                                                            ; |BLOCK_1|BL1:inst4|inst23                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst26                                                                                            ; |BLOCK_1|BL1:inst4|inst26                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst25                                                                                            ; |BLOCK_1|BL1:inst4|inst25                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst19                                                                                            ; |BLOCK_1|BL1:inst4|inst19                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|inst24                                                                                            ; |BLOCK_1|BL1:inst4|inst24                                                                                               ; out0             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita0   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita5~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita6~COUT ; cout             ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita7   ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_comb_bita7      ; sumout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[7] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[7]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[6] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[6]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[5] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[5]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[4] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[4]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[3] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[3]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[2] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[2]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[1] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[1]               ; regout           ;
+; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[0] ; |BLOCK_1|BL1:inst4|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[0]               ; regout           ;
+; |BLOCK_1|BL1:inst|inst26                                                                                             ; |BLOCK_1|BL1:inst|inst26                                                                                                ; out0             ;
+; |BLOCK_1|BL1:inst|inst19                                                                                             ; |BLOCK_1|BL1:inst|inst19                                                                                                ; out0             ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[7]  ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[7]                ; regout           ;
+; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[6]  ; |BLOCK_1|BL1:inst|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|safe_q[6]                ; regout           ;
+; |BLOCK_1|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout~1                      ; |BLOCK_1|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout~1                         ; out0             ;
++----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Wed Sep 29 18:50:48 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off L2_2 -c L2_2
+Info: Using vector source file "C:/Users/Vlad/Desktop/L2_2/BLOCK_1.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of BLOCK_1.vwf called L2_2.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      35.96 %
+Info: Number of transitions in simulation is 1534
+Info: Vector file BLOCK_1.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 141 megabytes
+    Info: Processing ended: Wed Sep 29 18:50:49 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
