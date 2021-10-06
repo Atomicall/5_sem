@@ -65,9 +65,7 @@ void COM_Port_Communication::packAndWriteString(std::string& whatto)
     QByteArray len(4, '0'); // 4 bytes for Message_legnth
     len.replace(4-QByteArray::number(mes_len, 16).length(),QByteArray::number(whatto.length(), 16).length(), QByteArray::number(whatto.length(), 16).toUpper());
     b_arr.insert(1, len);
-    std::clog<<"Length from packet : "<< len.toStdString();
-
-
+    std::clog<<"Length from packet : "<< len.toStdString()<<std::endl;
     b_arr.append(message); // Message starts from pos 6
     // Byte-stuff
     for (int i=0; i< mes_len; i++){
@@ -86,7 +84,19 @@ void COM_Port_Communication::packAndWriteString(std::string& whatto)
             continue;
         }
     }
+    uint16_t crc = 0;
+    for (auto it = whatto.begin(); it !=whatto.end(); it++){
+        crc += *it;
+    }
+    char lo = crc & 0xFF;
+    char hi = crc >> 8;
+
+    std::clog<<"crc " << crc<<"str: "<< std::to_string(crc)<< "lo=" << lo << "hi=" << hi << std::endl;
+    b_arr.append(hi);
+    b_arr.append(lo);
+
     b_arr.append(0x7E);
+    std::clog << "sent: " << b_arr.toStdString()<<std::endl;
     this->com->write(reinterpret_cast<const uint8_t*>(b_arr.constData()), b_arr.size());
 }
 
@@ -125,16 +135,23 @@ string COM_Port_Communication::recieveAndUnpackString()
         }
     mes = b_arr.mid(5, mes_len_From_packet_Int).toStdString();
     // Len from header != len after stuffing?
-    if (mes_len_From_packet_Int != b_arr.size() - 1 - 1 -4 ){
+    if (mes_len_From_packet_Int != b_arr.size() - 1 - 1 -4 - 2 ){
         std::clog<<"Original and accepted lengths do not match! " <<std::endl;
     }
+//    uint16_t crc = (uint16_t)(qChecksum(mes.data(), mes.length()));
+//    //uint16_t crc1 = static_cast<uint16_t>(b_arr.mid(5+mes_len_From_packet_Int, 6).toInt());
+    char lo = b_arr[5+mes_len_From_packet_Int+1];
+    char hi = b_arr[5+mes_len_From_packet_Int];
+    uint16_t crc = 0;
+    for (auto it = mes.begin(); it !=mes.end(); it++){
+        crc += *it;
+    }
+    uint16_t value = lo | uint16_t(hi) << 8;
+    if (crc != value ){
+        //std::clog<<"Original and accepted crc do not match! " << crc << "!=" << value <<std::endl;
+    }
     return mes;
-
-
-
-
  }
-
 
 std::string COM_Port_Communication::readString()
 {
