@@ -22,7 +22,7 @@ applicable agreement for further details.
 (symbol
 	(rect 16 16 216 144)
 	(text "BL1" (rect 5 0 27 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 111 26 124)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "ACLR" (rect 0 0 33 14)(font "Arial" (font_size 8)))
-		(text "ACLR" (rect 21 75 54 89)(font "Arial" (font_size 8)))
+		(text "CLR" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLR" (rect 21 75 44 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
