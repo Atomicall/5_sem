@@ -24,7 +24,7 @@ applicable agreement for further details.
 	(input)
 	(rect 88 296 256 312)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 9 0 30 12)(font "Arial" ))
+	(text "CLK" (rect 9 0 32 13)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1048 40 1224 56)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "DCa[15..0]" (rect 90 0 144 12)(font "Arial" ))
+	(text "DCa[15..0]" (rect 90 0 149 13)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -54,8 +54,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 504 152 632 456)
-	(text "lpm_decode1" (rect 26 1 116 17)(font "Arial" (font_size 10)))
-	(text "inst" (rect 8 288 25 300)(font "Arial" ))
+	(text "lpm_decode1" (rect 26 1 126 17)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 288 26 301)(font "Arial" ))
 	(port
 		(pt 0 152)
 		(input)
@@ -184,8 +184,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 288 272 432 336)
-	(text "lpm_counter2" (rect 33 1 125 17)(font "Arial" (font_size 10)))
-	(text "inst1" (rect 8 48 31 60)(font "Arial" ))
+	(text "lpm_counter2" (rect 33 1 134 17)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 8 48 33 61)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -201,7 +201,7 @@ applicable agreement for further details.
 		(line (pt 144 40)(pt 128 40)(line_width 3))
 	)
 	(drawing
-		(text "up counter" (rect 84 17 135 29)(font "Arial" ))
+		(text "up counter" (rect 84 17 143 30)(font "Arial" ))
 		(line (pt 16 16)(pt 128 16)(line_width 1))
 		(line (pt 128 16)(pt 128 48)(line_width 1))
 		(line (pt 128 48)(pt 16 48)(line_width 1))
@@ -275,82 +275,82 @@ applicable agreement for further details.
 	(pt 1016 424)
 )
 (connector
-	(text "DCa[0]" (rect 638 148 650 183)(font "Arial" )(vertical))
+	(text "DCa[0]" (rect 638 148 651 185)(font "Arial" )(vertical))
 	(pt 656 184)
 	(pt 656 48)
 )
 (connector
-	(text "DCa[1]" (rect 664 166 676 201)(font "Arial" )(vertical))
+	(text "DCa[1]" (rect 664 166 677 203)(font "Arial" )(vertical))
 	(pt 680 200)
 	(pt 680 48)
 )
 (connector
-	(text "DCa[2]" (rect 688 182 700 217)(font "Arial" )(vertical))
+	(text "DCa[2]" (rect 688 182 701 219)(font "Arial" )(vertical))
 	(pt 704 216)
 	(pt 704 48)
 )
 (connector
-	(text "DCa[3]" (rect 712 198 724 233)(font "Arial" )(vertical))
+	(text "DCa[3]" (rect 712 198 725 235)(font "Arial" )(vertical))
 	(pt 728 232)
 	(pt 728 48)
 )
 (connector
-	(text "DCa[4]" (rect 736 214 748 249)(font "Arial" )(vertical))
+	(text "DCa[4]" (rect 736 214 749 251)(font "Arial" )(vertical))
 	(pt 752 248)
 	(pt 752 48)
 )
 (connector
-	(text "DCa[5]" (rect 760 230 772 265)(font "Arial" )(vertical))
+	(text "DCa[5]" (rect 760 230 773 267)(font "Arial" )(vertical))
 	(pt 776 264)
 	(pt 776 48)
 )
 (connector
-	(text "DCa[6]" (rect 784 246 796 281)(font "Arial" )(vertical))
+	(text "DCa[6]" (rect 784 246 797 283)(font "Arial" )(vertical))
 	(pt 800 280)
 	(pt 800 48)
 )
 (connector
-	(text "DCa[7]" (rect 808 262 820 297)(font "Arial" )(vertical))
+	(text "DCa[7]" (rect 808 262 821 299)(font "Arial" )(vertical))
 	(pt 824 296)
 	(pt 824 48)
 )
 (connector
-	(text "DCa[8]" (rect 832 278 844 313)(font "Arial" )(vertical))
+	(text "DCa[8]" (rect 832 278 845 315)(font "Arial" )(vertical))
 	(pt 848 312)
 	(pt 848 48)
 )
 (connector
-	(text "DCa[9]" (rect 856 294 868 329)(font "Arial" )(vertical))
+	(text "DCa[9]" (rect 856 294 869 331)(font "Arial" )(vertical))
 	(pt 872 328)
 	(pt 872 48)
 )
 (connector
-	(text "DCa[10]" (rect 880 305 892 346)(font "Arial" )(vertical))
+	(text "DCa[10]" (rect 880 305 893 349)(font "Arial" )(vertical))
 	(pt 896 344)
 	(pt 896 48)
 )
 (connector
-	(text "DCa[11]" (rect 904 321 916 362)(font "Arial" )(vertical))
+	(text "DCa[11]" (rect 904 321 917 365)(font "Arial" )(vertical))
 	(pt 920 360)
 	(pt 920 48)
 )
 (connector
-	(text "DCa[12]" (rect 928 337 940 378)(font "Arial" )(vertical))
+	(text "DCa[12]" (rect 928 337 941 381)(font "Arial" )(vertical))
 	(pt 944 376)
 	(pt 944 48)
 )
 (connector
-	(text "DCa[13]" (rect 952 353 964 394)(font "Arial" )(vertical))
+	(text "DCa[13]" (rect 952 353 965 397)(font "Arial" )(vertical))
 	(pt 968 392)
 	(pt 968 48)
 )
 (connector
-	(text "DCa[14]" (rect 976 369 988 410)(font "Arial" )(vertical))
+	(text "DCa[14]" (rect 976 369 989 413)(font "Arial" )(vertical))
 	(pt 992 48)
 	(pt 992 408)
 )
 (connector
-	(text "DCa[15]" (rect 1000 385 1012 426)(font "Arial" )(vertical))
+	(text "DCa[15]" (rect 1000 385 1013 429)(font "Arial" )(vertical))
 	(pt 1016 48)
 	(pt 1016 424)
 )
@@ -380,7 +380,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "DCa[15..0]" (rect 770 32 824 44)(font "Arial" ))
+	(text "DCa[15..0]" (rect 770 32 829 45)(font "Arial" ))
 	(pt 776 48)
 	(pt 800 48)
 	(bus)
@@ -436,18 +436,23 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
+	(pt 440 304)
+	(pt 440 312)
+	(bus)
+)
+(connector
+	(pt 504 304)
+	(pt 440 304)
+	(bus)
+)
+(connector
+	(pt 440 312)
+	(pt 432 312)
+	(bus)
+)
+(connector
 	(pt 256 304)
 	(pt 288 304)
-)
-(connector
-	(pt 432 312)
-	(pt 432 304)
-	(bus)
-)
-(connector
-	(pt 432 304)
-	(pt 504 304)
-	(bus)
 )
 (junction (pt 680 48))
 (junction (pt 704 48))

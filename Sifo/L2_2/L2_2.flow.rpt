@@ -1,5 +1,5 @@
 Flow report for L2_2
-Thu Sep 30 12:13:53 2021
+Thu Oct 07 18:11:19 2021
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,20 +38,20 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Thu Sep 30 12:13:53 2021   ;
+; Flow Status                   ; Successful - Thu Oct 07 18:11:19 2021   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; L2_2                                    ;
 ; Top-level Entity Name         ; MAIN                                    ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; No                                      ;
-; Logic utilization             ; < 1 %                                   ;
-;     Combinational ALUTs       ; 52 / 12,480 ( < 1 % )                   ;
-;     Dedicated logic registers ; 38 / 12,480 ( < 1 % )                   ;
-; Total registers               ; 38                                      ;
-; Total pins                    ; 35 / 343 ( 10 % )                       ;
+; Logic utilization             ; 1 %                                     ;
+;     Combinational ALUTs       ; 104 / 12,480 ( < 1 % )                  ;
+;     Dedicated logic registers ; 57 / 12,480 ( < 1 % )                   ;
+; Total registers               ; 57                                      ;
+; Total pins                    ; 45 / 343 ( 13 % )                       ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                     ;
-; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                          ;
+; DSP block 9-bit elements      ; 2 / 96 ( 2 % )                          ;
 ; Total PLLs                    ; 0 / 6 ( 0 % )                           ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                           ;
 ; Device                        ; EP2S15F484C3                            ;
@@ -64,38 +64,68 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/30/2021 12:13:46 ;
+; Start date & time ; 10/07/2021 18:11:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; L2_2                ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                    ;
-+------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 220037191846672.163299322618092 ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_COUNTER                     ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                         ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_COUNTER                     ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_counter0.tdf                ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_counter0.bsf                ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_counter0.inc                ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.tdf                    ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.bsf                    ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.inc                    ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_counter1.tdf                ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_counter1.bsf                ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_counter1.inc                ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                        ; --            ; MAIN        ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; MAIN        ; Top            ;
-; TOP_LEVEL_ENTITY                   ; MAIN                            ; L2_2          ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+---------------------------------+---------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                   ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 58166060838710.163361946508932 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MULT                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COMPARE                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter0.tdf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter0.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter0.inc               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux0.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux0.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux0.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter1.tdf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter1.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter1.inc               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode0.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode0.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode0.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode1.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode1.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode1.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter2.tdf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter2.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter2.inc               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mult3.tdf                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mult3.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mult3.inc                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_compare0.tdf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_compare0.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_compare0.inc               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter3.tdf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter3.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter3.inc               ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                       ; --            ; MAIN        ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; MAIN        ; Top            ;
+; TOP_LEVEL_ENTITY                   ; MAIN                           ; L2_2          ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -103,11 +133,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 229 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:02     ; 1.0                     ; 260 MB              ; 00:00:04                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 228 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 158 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:04     ; --                      ; --                  ; 00:00:06                           ;
+; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 233 MB              ; 00:00:04                           ;
+; Fitter                  ; 00:00:05     ; 1.0                     ; 260 MB              ; 00:00:05                           ;
+; Assembler               ; 00:00:02     ; 1.0                     ; 228 MB              ; 00:00:02                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 158 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:10     ; --                      ; --                  ; 00:00:12                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,10 +146,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; DESKTOP-F77BQDO  ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; DESKTOP-F77BQDO  ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; DESKTOP-F77BQDO  ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; DESKTOP-F77BQDO  ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; DESKTOP-ISBS2NL  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; DESKTOP-ISBS2NL  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; DESKTOP-ISBS2NL  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; DESKTOP-ISBS2NL  ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

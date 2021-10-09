@@ -1,1 +1,12 @@
 v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,BLOCK_2:inst12|lpm_mult3:inst23|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_out1,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,BLOCK_2:inst12|lpm_mult3:inst24|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_out1,
+REGISTER_PACKING,REG_PACK_TYPE_DSPMULT,DATAA,1,BLOCK_2:inst12|lpm_counter0:inst12|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[0],BLOCK_2:inst12|lpm_mult3:inst24|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_mult2,
+REGISTER_PACKING,REG_PACK_TYPE_DSPMULT,DATAA,2,BLOCK_2:inst12|lpm_counter0:inst12|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[1],BLOCK_2:inst12|lpm_mult3:inst24|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_mult2,
+REGISTER_PACKING,REG_PACK_TYPE_DSPMULT,DATAA,3,BLOCK_2:inst12|lpm_counter0:inst12|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[2],BLOCK_2:inst12|lpm_mult3:inst24|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_mult2,
+REGISTER_PACKING,REG_PACK_TYPE_DSPMULT,DATAA,4,BLOCK_2:inst12|lpm_counter0:inst12|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[3],BLOCK_2:inst12|lpm_mult3:inst24|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_mult2,
+REGISTER_PACKING,REG_PACK_TYPE_DSPMULT,DATAA,5,BLOCK_2:inst12|lpm_counter0:inst12|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[4],BLOCK_2:inst12|lpm_mult3:inst24|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_mult2,
+REGISTER_PACKING,REG_PACK_TYPE_DSPMULT,DATAA,6,BLOCK_2:inst12|lpm_counter0:inst12|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[5],BLOCK_2:inst12|lpm_mult3:inst24|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_mult2,
+REGISTER_PACKING,REG_PACK_TYPE_DSPMULT,DATAA,7,BLOCK_2:inst12|lpm_counter0:inst12|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[6],BLOCK_2:inst12|lpm_mult3:inst24|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_mult2,
+REGISTER_PACKING,REG_PACK_TYPE_DSPMULT,DATAA,8,BLOCK_2:inst12|lpm_counter0:inst12|lpm_counter:lpm_counter_component|cntr_noi:auto_generated|counter_reg_bit1a[7],BLOCK_2:inst12|lpm_mult3:inst24|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_mult2,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,BLOCK_2:inst12|lpm_mult3:inst23|lpm_mult:lpm_mult_component|mult_c9n:auto_generated|mac_mult2,

@@ -1,5 +1,5 @@
 Assembler report for L2_2
-Thu Sep 30 12:13:52 2021
+Thu Oct 07 18:11:17 2021
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Sep 30 12:13:52 2021 ;
+; Assembler Status      ; Successful - Thu Oct 07 18:11:17 2021 ;
 ; Revision Name         ; L2_2                                  ;
 ; Top-level Entity Name ; MAIN                                  ;
 ; Family                ; Stratix II                            ;
@@ -96,7 +96,7 @@ applicable agreement for further details.
 +----------------+-------------------------------------------+
 ; Device         ; EP2S15F484C3                              ;
 ; JTAG usercode  ; 0xFFFFFFFF                                ;
-; Checksum       ; 0x00282746                                ;
+; Checksum       ; 0x0029531F                                ;
 +----------------+-------------------------------------------+
 
 
@@ -107,7 +107,7 @@ applicable agreement for further details.
 +--------------------+---------------------------------------+
 ; Device             ; EPC16                                 ;
 ; JTAG usercode      ; 0xFFFFFFFF                            ;
-; Checksum           ; 0x1EF3C65B                            ;
+; Checksum           ; 0x1EEEC24D                            ;
 ; Compression Ratio  ; 3                                     ;
 +--------------------+---------------------------------------+
 
@@ -118,14 +118,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Thu Sep 30 12:13:51 2021
+    Info: Processing started: Thu Oct 07 18:11:15 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off L2_2 -c L2_2
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 228 megabytes
-    Info: Processing ended: Thu Sep 30 12:13:52 2021
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Thu Oct 07 18:11:17 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
