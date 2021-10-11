@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#include "../MoppyConfig.h"
-#include "MoppyInstrument.h"
+#include "MoppyConfig.h"
+#include "MoppyInstruments/MoppyInstrument.h"
 
 struct Drive
 {
@@ -24,15 +24,15 @@ struct Drive
 class Floppas_Rack{
     public:
     Floppas_Rack (){};
-    
-    
-    Drives drive [3];
+
+
+    Drive drive [3];
     uint8_t originalPeriod[3] = {};
     uint8_t currentTick[3] = {};
     uint8_t currentPeriod[3] = {};
 
     void setupPinModes(uint8_t& d1S, uint8_t& d1D, uint8_t& d2S, uint8_t& d2D,
-                                                    uint8_t& d3S, uint8_t& d3D,);
+                                                    uint8_t& d3S, uint8_t& d3D);
     void toggleRack(uint8_t& whatDrives);
     protected:
     uint8_t MAX_POSITION[3] = {158,158,158};

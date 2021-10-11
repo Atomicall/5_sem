@@ -16,17 +16,9 @@ class Floppas {
   static void startHandler();
   static void stopHandler();
   static void controlChangeHandler(byte channel, byte number, byte value);
-
-  
-
   Floppas_Rack* floppas;
   uint8_t floppasCount = 0;
-
  protected:
-  
-
-  
-
 
   static void resetAll(); 
   static void togglePin(byte driveNum, byte pin, byte direction_pin);//
@@ -36,5 +28,3 @@ class Floppas {
   static void blinkLED(); //
   static void startupSound(byte driveNum); 
 };
-}
-;

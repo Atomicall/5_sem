@@ -1,5 +1,5 @@
-#include "./MoppyInstrument.h"
-#include "./FloppyDrives.h"
+#include "../include/MoppyInstruments/MoppyInstrument.h"
+#include "../include/MoppyInstruments/FloppyDrives.h"
 
 
 // First drive being used for floppies, and the last drive.  Used for calculating
