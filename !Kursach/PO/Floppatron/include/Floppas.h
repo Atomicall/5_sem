@@ -17,7 +17,7 @@ class Floppas {
   void stopHandler();
   void controlChangeHandler(byte channel, byte number, byte value);
   Floppas_Rack* floppas;
-  uint8_t floppasCount = 1;
+  uint8_t floppasRackCount = 1;
   void startupSound(byte rackNum);
   void tick();
  protected:

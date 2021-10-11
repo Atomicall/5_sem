@@ -1,0 +1,1 @@
+CMakeLists.txt not found in D:\Labs\5_sem\!Kursach\PO\Flopatron Select CMakeLists.txt

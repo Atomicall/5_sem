@@ -7,7 +7,8 @@ struct Drive
     uint8_t stepPin = 0;
     uint8_t dirPin = 0;
 
-    uint8_t currentState = LOW;
+    uint8_t currentStateDir = LOW;
+    uint8_t currentStatePin = LOW;
     uint8_t currentPosition = 0;
 
 };
@@ -19,9 +20,7 @@ struct Drive
 
 class Floppas_Rack{
     public:
-    Floppas_Rack ()= default;
-
-
+    Floppas_Rack (){/*Serial.write("Floppas Rack\n");*/};
     Drive drive [3];
     uint16_t originalPeriod=0;
     uint16_t currentTick=0;

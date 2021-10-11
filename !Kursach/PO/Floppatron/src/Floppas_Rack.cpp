@@ -13,6 +13,12 @@ void Floppas_Rack::setupPinModes(uint8_t d1S, uint8_t d1D, uint8_t d2S, uint8_t 
     drive[1].dirPin = d2D;
     drive[2].stepPin = d3S;
     drive[2].dirPin = d3D;
+    /*digitalWrite( drive[0].stepPin, HIGH);
+    digitalWrite( drive[1].stepPin, HIGH);
+    digitalWrite( drive[2].stepPin, HIGH);
+    digitalWrite( drive[0].dirPin, HIGH);
+    digitalWrite( drive[1].dirPin, HIGH);
+    digitalWrite( drive[2].dirPin, HIGH);*/
 
 }
 
@@ -20,24 +26,25 @@ void Floppas_Rack::toggleRack(uint8_t whatDrives) {
 
     for (int i = 0; i< whatDrives; i++){
     if (drive[i].currentPosition >= MAX_POSITION[0]) {
-        drive[i].currentState = HIGH;
+        drive[i].currentStateDir = HIGH;
         digitalWrite(drive[i].dirPin,HIGH);
     }
     else if (drive[i].currentPosition <= 0) {
-        drive[i].currentState = LOW;
+        drive[i].currentStateDir = LOW;
         digitalWrite(drive[i].dirPin,LOW);
     }
     //Update currentPosition
-    if ( drive[i].currentState == HIGH){
+    if (drive[i].currentStateDir == HIGH){
         drive[i].currentPosition--;
     }
     else {
         drive[i].currentPosition++;
     }
     //Pulse the control pin
-    digitalWrite(drive[i].stepPin, drive[i].currentState);
-        drive[i].currentState = ~drive[i].currentState;
+    digitalWrite(drive[i].stepPin, drive[i].currentStatePin);
+        drive[i].currentStatePin = ~drive[i].currentStatePin;
 }
+    delay(5);
 }
 
 void Floppas_Rack::resetRack() {
@@ -46,14 +53,15 @@ void Floppas_Rack::resetRack() {
         digitalWrite(this->drive[i].dirPin, HIGH);
         for (uint8_t s=0;s<MAX_POSITION[0];s+=2){
                 digitalWrite(this->drive[i].stepPin,HIGH);
+                delay(3);
                 digitalWrite(this->drive[i].stepPin,LOW);
-            delay(5);
+            //delay(5);
             }
-        byte stepPin = this->drive[i].stepPin;
+        //byte stepPin = this->drive[i].stepPin;
         this->drive[i].currentPosition = 0; // We're reset.
-        this->drive[i].currentState = LOW;
+        this->drive[i].currentStateDir = LOW;
         digitalWrite(this->drive[i].dirPin,LOW);
-        //this->drive[i].currentState = LOW; // Ready to go forward.
+        //this->drive[i].currentStateDir = LOW; // Ready to go forward.
         }
 
 }

@@ -7,19 +7,19 @@ Floppas::Floppas() {
 }
 
 void Floppas::setup(uint8_t count) {
-    this->floppasCount = LAST_RACK - FIRST_RACK + 1;
+    //Serial.write("Floppas setup");
+    this->floppasRackCount = LAST_RACK - FIRST_RACK + 1;
     // [0] is empty
-    floppas = new Floppas_Rack [floppasCount];
+    floppas = new Floppas_Rack [floppasRackCount];
    /* for (;;){
     }*/
    floppas[0].setupPinModes(12, 11, 10, 9, 8, 7);
    resetAll();
-   delay(500); // Wait a half second for safety
+   delay(20); // Wait a half second for safety
     // Setup timer to handle interrupts for floppy driving
     /*Timer1.initialize(TIMER_RESOLUTION); // Set up a timer at the resolution defined in MoppyInstrument.h
     Timer1.attachInterrupt(tick); // Attach the tick function*/
     //startupSound(FIRST_RACK);
-
 }
 
 void Floppas::systemMessage(uint8_t command, uint8_t *payload) {
@@ -38,11 +38,11 @@ void Floppas::noteOnHandler(byte channel, byte note, byte velocity) {
 }
 
 void Floppas::noteOffHandler(byte channel, byte note, byte velocity) {
-
+    floppas[channel].currentPeriod = floppas[channel].originalPeriod = 0;
 }
 
 void Floppas::pitchBendHandler(byte channel, int bend) {
-
+    floppas[channel].currentPeriod = floppas[channel].originalPeriod / pow(2.0, BEND_OCTAVES*(bend/(float)8192));
 }
 
 void Floppas::startHandler() {
@@ -54,11 +54,24 @@ void Floppas::stopHandler() {
 }
 
 void Floppas::controlChangeHandler(byte channel, byte number, byte value) {
-
+    switch(number)
+    {
+        case 120:
+        {
+            floppas[channel].currentPeriod = floppas[channel].originalPeriod = 0;
+            break;
+        }
+        case 123:
+        {
+            floppas[channel].currentPeriod = floppas[channel].originalPeriod = 0;
+            break;
+        }
+    }
 }
 
 void Floppas::resetAll() {
-    for (int i=0; i < floppasCount; i++){
+    for (int i=0; i < floppasRackCount; i++){
+        //Serial.write("Rack "); Serial.write(i);Serial.write(" Reset\n");
         floppas[i].resetRack();
     }
 
@@ -79,7 +92,7 @@ void Floppas::reset(byte rackNum) {
 
 void Floppas::tick() {
 
-    for (int d = 0; d < floppasCount; d++) {
+    for (int d = 0; d < floppasRackCount; d++) {
         if (floppas[d].currentPeriod > 0) {
             floppas[d].currentTick++;
             if (floppas[d].currentTick >= floppas[d].currentPeriod) {
@@ -105,10 +118,13 @@ void Floppas::startupSound(byte rackNum) {
     };
     byte i = 0;
     unsigned long lastRun = 0;
-    delay(1000);
+    delay(300);
     while(i < 5) {
         if (millis() - 200 > lastRun) {
             lastRun = millis();
+           // Serial.write("Note ");
+           // Serial.write(toAscii(i));
+           // Serial.write("\n");
             floppas[rackNum].currentPeriod = chargeNotes[i++];
         }
     }

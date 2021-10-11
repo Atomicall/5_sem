@@ -7,36 +7,60 @@
 #include <serialMIDI.h>
 #include <Arduino.h>
 
-#include "Floppas.h"
+
+
 #include "../.pio/libdeps/nanoatmega328new/TimerOne/TimerOne.h"
+#include "../include/Floppas.h"
 
 
 Floppas* fl;
  // Set up a timer at the resolution defined in MoppyInstrument.h
 
 ///
-//MIDI_CREATE_INSTANCE(HardwareSerial, Serial3,    midi2);
+MIDI_CREATE_INSTANCE(HardwareSerial, Serial, midi1);
 
 
-void hnd (){
+void hnd_int (){
+    //Serial.write("Int");
     fl->tick();
+}
+void hnd_on(uint8_t ch, uint8_t note, uint8_t velocity){
+    fl->noteOnHandler(ch-1, note, velocity);
+}
+void hnd_off(uint8_t ch, uint8_t note, uint8_t velocity){
+    fl->noteOffHandler(ch-1, note, velocity);
+}
+void hnd_ctrlCh (byte channel, byte number, byte value){
+    fl->controlChangeHandler(channel-1, number, value);
+}
+void hnd_ptchB(byte channel, int bend){
+    fl->pitchBendHandler(channel-1, bend);
 }
 
 void setup()
 {
-    fl = new Floppas;
-
-    fl->setup(1);
-    Timer1.initialize(TIMER_RESOLUTION);
-    Timer1.attachInterrupt(hnd);
-
     Serial.begin(9600);
+    fl = new Floppas ;
+    fl->setup(1);
+    Timer1.initialize(40);
+    Timer1.attachInterrupt(hnd_int);
+
+    //delay(1000);
+    //fl->startupSound(0);
+    midi1.setHandleNoteOn(hnd_on);
+    midi1.setHandleNoteOff(hnd_off);
+    midi1.setHandleControlChange(hnd_ctrlCh);
+    midi1.setHandlePitchBend(hnd_ptchB);
+    midi1.begin(MIDI_CHANNEL_OMNI);
+    midi1.turnThruOff();
+    Serial.begin(115200);
+   // Serial.write("Ready");
+
      // Attach the tick function
 
     // Call setup() on the instrument to allow to to prepare for action
     /*instrument.setup();
-    midi1.setHandleNoteOn(instrument.noteOnHandler);
-    midi1.setHandleNoteOff(instrument.noteOffHandler);
+
     // midi1.setHandlePitchBend(instrument.pitchBendHandler);
     midi1.setHandleStart(instrument.startHandler);
     midi1.setHandleStop(instrument.stopHandler);
@@ -66,7 +90,8 @@ void loop()
     // will call the system or device handlers on the intrument whenever a message is received.
     //midi1.read();
    //midi2.read();
-   delay (3000);
-   Serial.write("Try\n");
-   fl->startupSound(1);
+   //delay (10000);
+   //Serial.write("Try\n");
+  // fl->startupSound(0);
+  midi1.read();
 }
