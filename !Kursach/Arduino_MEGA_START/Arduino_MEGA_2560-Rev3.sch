@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
-Sheet 1 19
+Sheet 1 31
 Title "Arduino_MEGA_2560-Rev3.sch"
 Date "17 JAN 2018"
 Rev "1.0"
@@ -49,7 +49,7 @@ $Comp
 L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 ADCH1
 U 1 1 5A5FD68B
 P 4650 3050
-F 0 "ADCH1" H 4800 3075 70  0000 L BNN
+F 0 "ADCH1" H 4200 2700 70  0000 L BNN
 F 1 "8x1F-H8.5" H 4401 2550 70  0000 L BNN
 F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 4640 2840 65  0001 L TNN
 F 3 "" H 4650 3050 60  0001 C CNN
@@ -88,17 +88,6 @@ F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 5640 2940 65  0001 L TNN
 F 3 "" H 5650 3150 60  0001 C CNN
 	1    5650 3150
 	1    0    0    -1  
-$EndComp
-$Comp
-L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 PWML1
-U 1 1 5A6006FB
-P 6700 3950
-F 0 "PWML1" H 5850 3850 70  0000 L BNN
-F 1 "8x1F-H8.5" H 6451 3450 70  0000 L BNN
-F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 6690 3740 65  0001 L TNN
-F 3 "" H 6700 3950 60  0001 C CNN
-	1    6700 3950
-	1    0    0    1   
 $EndComp
 $Comp
 L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-2X18 XIO1
@@ -331,10 +320,10 @@ P51
 Text Label 1450 2600 2    50   ~ 0
 P53
 $Comp
-L power:GND #PWR02
+L power:GND #PWR03
 U 1 1 6142E87C
 P 5850 3350
-F 0 "#PWR02" H 5850 3100 50  0001 C CNN
+F 0 "#PWR03" H 5850 3100 50  0001 C CNN
 F 1 "GND" H 6000 3350 50  0000 C CNN
 F 2 "" H 5850 3350 50  0001 C CNN
 F 3 "" H 5850 3350 50  0001 C CNN
@@ -353,7 +342,7 @@ $Comp
 L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 PWMH1
 U 1 1 61431A5A
 P 6700 5900
-F 0 "PWMH1" H 8250 6000 70  0000 L BNN
+F 0 "PWMH1" H 7100 5650 70  0000 L BNN
 F 1 "8x1F-H8.5" H 6451 5400 70  0000 L BNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6690 5690 65  0001 L TNN
 F 3 "" H 6700 5900 60  0001 C CNN
@@ -375,10 +364,10 @@ Text Notes 6800 5800 0    70   ~ 0
 Text Notes 6800 5600 0    70   ~ 0
 AREF
 $Comp
-L power:GND #PWR03
+L power:GND #PWR04
 U 1 1 61433714
 P 6200 5700
-F 0 "#PWR03" H 6200 5450 50  0001 C CNN
+F 0 "#PWR04" H 6200 5450 50  0001 C CNN
 F 1 "GND" H 6300 5750 50  0000 C CNN
 F 2 "" H 6200 5700 50  0001 C CNN
 F 3 "" H 6200 5700 50  0001 C CNN
@@ -760,10 +749,10 @@ Wire Wire Line
 Wire Wire Line
 	3650 8800 3750 8800
 $Comp
-L Connector:Conn_01x02_Male J1
+L Connector:Conn_01x02_Male J2
 U 1 1 614B17ED
 P 7150 4350
-F 0 "J1" V 7150 4400 50  0000 L CNN
+F 0 "J2" V 7150 4400 50  0000 L CNN
 F 1 "RX" V 7250 4400 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7150 4350 50  0001 C CNN
 F 3 "~" H 7150 4350 50  0001 C CNN
@@ -793,10 +782,10 @@ Wire Wire Line
 Wire Wire Line
 	6600 3650 6900 3650
 $Comp
-L Connector:Conn_01x02_Male J2
+L Connector:Conn_01x02_Male J3
 U 1 1 614B4F07
 P 7450 4050
-F 0 "J2" V 7450 4100 50  0000 L CNN
+F 0 "J3" V 7450 4100 50  0000 L CNN
 F 1 "TX" V 7550 4100 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7450 4050 50  0001 C CNN
 F 3 "~" H 7450 4050 50  0001 C CNN
@@ -835,38 +824,6 @@ Wire Wire Line
 Wire Wire Line
 	1600 9500 1700 9500
 $Sheet
-S 2700 9500 500  350 
-U 614769B2
-F0 "sheet614769AE" 50
-F1 "drive_conn.sch" 50
-F2 "Step" I L 2700 9800 50 
-F3 "Dir" I L 2700 9700 50 
-$EndSheet
-Wire Wire Line
-	2700 9700 2600 9700
-Wire Wire Line
-	2600 9800 2700 9800
-$Sheet
-S 3750 9500 500  350 
-U 6147D787
-F0 "sheet6147D783" 50
-F1 "drive_conn.sch" 50
-F2 "Step" I L 3750 9800 50 
-F3 "Dir" I L 3750 9700 50 
-$EndSheet
-Text Label 3650 9800 2    50   ~ 0
-Step18
-Wire Wire Line
-	3750 9700 3650 9700
-Wire Wire Line
-	3650 9800 3750 9800
-Text Label 3650 9700 2    50   ~ 0
-Dir18
-Text Label 2600 9700 2    50   ~ 0
-Dir17
-Text Label 2600 9800 2    50   ~ 0
-Step17
-$Sheet
 S 1700 9200 500  350 
 U 61462287
 F0 "sheet61462283" 50
@@ -885,10 +842,10 @@ Step18
 NoConn ~ 7450 4250
 NoConn ~ 7250 4550
 $Comp
-L Connector:Conn_01x03_Male J3
+L Connector:Conn_01x03_Male J4
 U 1 1 61469229
 P 7550 2750
-F 0 "J3" H 7522 2682 50  0000 R CNN
+F 0 "J4" H 7522 2682 50  0000 R CNN
 F 1 "Midi_UART" H 7522 2773 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7550 2750 50  0001 C CNN
 F 3 "~" H 7550 2750 50  0001 C CNN
@@ -896,10 +853,10 @@ F 3 "~" H 7550 2750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J4
+L Connector:Conn_01x03_Male J5
 U 1 1 6146FE40
 P 7550 3100
-F 0 "J4" H 7522 3032 50  0000 R CNN
+F 0 "J5" H 7522 3032 50  0000 R CNN
 F 1 "USB_Uart" H 7522 3123 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7550 3100 50  0001 C CNN
 F 3 "~" H 7550 3100 50  0001 C CNN
@@ -923,10 +880,10 @@ Wire Wire Line
 Wire Wire Line
 	7350 3100 7300 3100
 $Comp
-L power:GND #PWR0101
+L power:GND #PWR07
 U 1 1 6148674B
 P 7300 3300
-F 0 "#PWR0101" H 7300 3050 50  0001 C CNN
+F 0 "#PWR07" H 7300 3050 50  0001 C CNN
 F 1 "GND" H 7450 3300 50  0000 C CNN
 F 2 "" H 7300 3300 50  0001 C CNN
 F 3 "" H 7300 3300 50  0001 C CNN
@@ -938,10 +895,10 @@ Wire Wire Line
 Wire Wire Line
 	7300 3200 7350 3200
 $Comp
-L power:GND #PWR0102
+L power:GND #PWR06
 U 1 1 6148EAB9
 P 7200 2900
-F 0 "#PWR0102" H 7200 2650 50  0001 C CNN
+F 0 "#PWR06" H 7200 2650 50  0001 C CNN
 F 1 "GND" H 7100 2900 50  0000 C CNN
 F 2 "" H 7200 2900 50  0001 C CNN
 F 3 "" H 7200 2900 50  0001 C CNN
@@ -953,10 +910,10 @@ Wire Wire Line
 Wire Wire Line
 	7200 2850 7350 2850
 $Comp
-L Connector:Conn_01x02_Male J5
+L Connector:Conn_01x02_Male J1
 U 1 1 6149D75C
 P 5100 3350
-F 0 "J5" H 5208 3531 50  0000 C CNN
+F 0 "J1" H 5208 3531 50  0000 C CNN
 F 1 "Power_conn" H 5208 3440 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5100 3350 50  0001 C CNN
 F 3 "~" H 5100 3350 50  0001 C CNN
@@ -968,15 +925,664 @@ Wire Wire Line
 Connection ~ 5550 3350
 Wire Wire Line
 	5300 3450 5550 3450
+Text Label 2600 9800 2    50   ~ 0
+Step17
+Text Label 2600 9700 2    50   ~ 0
+Dir17
+Text Label 3650 9700 2    50   ~ 0
+Dir18
+Wire Wire Line
+	3650 9800 3750 9800
+Wire Wire Line
+	3750 9700 3650 9700
+Text Label 3650 9800 2    50   ~ 0
+Step18
+$Sheet
+S 3750 9500 500  350 
+U 6147D787
+F0 "sheet6147D783" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 3750 9800 50 
+F3 "Dir" I L 3750 9700 50 
+$EndSheet
+Wire Wire Line
+	2600 9800 2700 9800
+Wire Wire Line
+	2700 9700 2600 9700
+$Sheet
+S 2700 9500 500  350 
+U 614769B2
+F0 "sheet614769AE" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 2700 9800 50 
+F3 "Dir" I L 2700 9700 50 
+$EndSheet
 $Comp
-L 74xx:74HCT595 U?
-U 1 1 614AB632
-P 7950 8250
-F 0 "U?" H 7950 9031 50  0000 C CNN
-F 1 "74HCT595" H 7950 8940 50  0000 C CNN
-F 2 "" H 7950 8250 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 7950 8250 50  0001 C CNN
-	1    7950 8250
+L Connector:Conn_01x04_Female J6
+U 1 1 6166E4DF
+P 7900 8050
+F 0 "J6" H 7792 7625 50  0000 C CNN
+F 1 "USB" H 7792 7716 50  0000 C CNN
+F 2 "usb_type_c_female_board_Aliexpress:usb_type_c_female_board_Aliexpress" H 7900 8050 50  0001 C CNN
+F 3 "~" H 7900 8050 50  0001 C CNN
+	1    7900 8050
 	1    0    0    -1  
 $EndComp
+Text Label 8050 7950 0    50   ~ 0
+U_vcc
+Text Label 8050 8250 0    50   ~ 0
+U_gnd
+Text Notes 7400 7950 0    50   ~ 0
+Usb 5v
+Text Notes 7400 8050 0    50   ~ 0
+D-
+Text Notes 7400 8150 0    50   ~ 0
+D+
+Text Notes 7400 8250 0    50   ~ 0
+U_Gnd
+$Comp
+L Device:R_Small R3
+U 1 1 6167FAB3
+P 8600 7850
+F 0 "R3" H 8659 7896 50  0000 L CNN
+F 1 "2.2k" H 8659 7805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 8600 7850 50  0001 C CNN
+F 3 "~" H 8600 7850 50  0001 C CNN
+	1    8600 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 61682F01
+P 5300 8450
+F 0 "Y1" V 5250 8650 50  0000 C CNN
+F 1 "16M" V 5350 8650 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 5300 8450 50  0001 C CNN
+F 3 "~" H 5300 8450 50  0001 C CNN
+	1    5300 8450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega8A-PU U1
+U 1 1 616837FE
+P 6300 9200
+F 0 "U1" H 5750 10700 50  0000 C CNN
+F 1 "ATmega8A-PU" H 5950 10600 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 6300 9200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Microchip%208bit%20mcu%20AVR%20ATmega8A%20data%20sheet%2040001974A.pdf" H 6300 9200 50  0001 C CNN
+	1    6300 9200
+	1    0    0    -1  
+$EndComp
+Text Label 6950 9500 0    10   ~ 0
+TXD2
+Text Label 6950 9600 0    10   ~ 0
+RXD2
+Wire Wire Line
+	6900 9600 6950 9600
+Wire Wire Line
+	6900 9500 6950 9500
+$Comp
+L power:GND #PWR08
+U 1 1 6169A44C
+P 8050 8250
+F 0 "#PWR08" H 8050 8000 50  0001 C CNN
+F 1 "GND" H 8055 8077 50  0000 C CNN
+F 2 "" H 8050 8250 50  0001 C CNN
+F 3 "" H 8050 8250 50  0001 C CNN
+	1    8050 8250
+	1    0    0    -1  
+$EndComp
+Text Label 9150 8050 0    50   ~ 0
+D-
+Text Label 9150 8150 0    50   ~ 0
+D+
+Wire Wire Line
+	5300 8300 5700 8300
+Wire Wire Line
+	5300 8600 5600 8600
+Wire Wire Line
+	5600 8600 5600 8500
+Wire Wire Line
+	5600 8500 5700 8500
+$Comp
+L Device:C_Small C1
+U 1 1 616D6139
+P 5200 8300
+F 0 "C1" V 5400 8300 50  0000 L CNN
+F 1 "22pF" V 5300 8200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5200 8300 50  0001 C CNN
+F 3 "~" H 5200 8300 50  0001 C CNN
+	1    5200 8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 616DC3D9
+P 5200 8600
+F 0 "C2" V 5050 8600 50  0000 L CNN
+F 1 "22pF" V 4950 8500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5200 8600 50  0001 C CNN
+F 3 "~" H 5200 8600 50  0001 C CNN
+	1    5200 8600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5300 8300
+$Comp
+L power:GND #PWR05
+U 1 1 616E25A2
+P 6300 10600
+F 0 "#PWR05" H 6300 10350 50  0001 C CNN
+F 1 "GND" H 6305 10427 50  0000 C CNN
+F 2 "" H 6300 10600 50  0001 C CNN
+F 3 "" H 6300 10600 50  0001 C CNN
+	1    6300 10600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 616E7608
+P 4900 8600
+F 0 "#PWR02" H 4900 8350 50  0001 C CNN
+F 1 "GND" H 4905 8427 50  0000 C CNN
+F 2 "" H 4900 8600 50  0001 C CNN
+F 3 "" H 4900 8600 50  0001 C CNN
+	1    4900 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 8300 4900 8300
+Wire Wire Line
+	4900 8300 4900 8600
+Wire Wire Line
+	4900 8600 5100 8600
+Connection ~ 4900 8600
+Text Label 6100 7700 0    50   ~ 0
+U_vcc
+Wire Wire Line
+	6300 7700 6300 7800
+$Comp
+L Device:R_Small R1
+U 1 1 61724139
+P 8150 8050
+F 0 "R1" V 8300 7850 50  0000 L CNN
+F 1 "68" V 8200 7850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 8150 8050 50  0001 C CNN
+F 3 "~" H 8150 8050 50  0001 C CNN
+	1    8150 8050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 61729E7C
+P 8150 8150
+F 0 "R2" V 8150 7950 50  0000 L CNN
+F 1 "68" V 8050 7950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 8150 8150 50  0001 C CNN
+F 3 "~" H 8150 8150 50  0001 C CNN
+	1    8150 8150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener_Small Di2
+U 1 1 617482B6
+P 8950 8300
+F 0 "Di2" V 8900 8450 50  0000 C CNN
+F 1 "3.6V" V 9000 8450 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 8950 8300 50  0001 C CNN
+F 3 "~" V 8950 8300 50  0001 C CNN
+	1    8950 8300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 8050 8600 8050
+Wire Wire Line
+	8600 8050 9150 8050
+Connection ~ 8600 8050
+$Comp
+L Device:D_Zener_Small Di1
+U 1 1 6168088E
+P 8600 8300
+F 0 "Di1" V 8550 8400 50  0000 C CNN
+F 1 "3.6V" V 8650 8450 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 8600 8300 50  0001 C CNN
+F 3 "~" V 8600 8300 50  0001 C CNN
+	1    8600 8300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 8050 8600 8200
+$Comp
+L power:GND #PWR09
+U 1 1 6177A4D0
+P 8600 8450
+F 0 "#PWR09" H 8600 8200 50  0001 C CNN
+F 1 "GND" H 8605 8277 50  0000 C CNN
+F 2 "" H 8600 8450 50  0001 C CNN
+F 3 "" H 8600 8450 50  0001 C CNN
+	1    8600 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 8400 8600 8450
+Wire Wire Line
+	8950 8400 8600 8400
+Connection ~ 8600 8400
+Wire Wire Line
+	8250 8150 8950 8150
+Wire Wire Line
+	8950 8150 8950 8200
+Connection ~ 8950 8150
+Wire Wire Line
+	8950 8150 9150 8150
+Text Label 6950 9800 0    50   ~ 0
+D-
+Text Label 6950 9700 0    50   ~ 0
+D+
+Wire Wire Line
+	6950 9700 6900 9700
+Wire Wire Line
+	6950 9800 6900 9800
+Text Label 6950 9900 0    50   ~ 0
+U_pull_up
+Wire Wire Line
+	6950 9900 6900 9900
+Wire Wire Line
+	8600 7950 8600 8050
+NoConn ~ 6400 7800
+NoConn ~ 5700 8100
+NoConn ~ 5700 8700
+NoConn ~ 6900 8100
+NoConn ~ 6900 8200
+NoConn ~ 6900 8300
+NoConn ~ 6900 8400
+NoConn ~ 6900 8500
+NoConn ~ 6900 8600
+NoConn ~ 6900 8800
+NoConn ~ 6900 8900
+NoConn ~ 6900 9000
+NoConn ~ 6900 9100
+NoConn ~ 6900 9200
+NoConn ~ 6900 9300
+NoConn ~ 6900 10000
+NoConn ~ 6900 10100
+NoConn ~ 6900 10200
+NoConn ~ 6400 10600
+Text Label 6900 3750 0    50   ~ 0
+Dir19
+Text Label 6900 3650 0    50   ~ 0
+Step19
+Text Label 4650 9800 2    50   ~ 0
+Step19
+Text Label 4650 9700 2    50   ~ 0
+Dir19
+Wire Wire Line
+	4650 9800 4750 9800
+Wire Wire Line
+	4750 9700 4650 9700
+$Sheet
+S 4750 9500 500  350 
+U 61849843
+F0 "sheet6184983B" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 4750 9800 50 
+F3 "Dir" I L 4750 9700 50 
+$EndSheet
+Text Label 1600 10550 2    50   ~ 0
+Step20
+Text Label 1600 10450 2    50   ~ 0
+Dir20
+Text Label 2650 10450 2    50   ~ 0
+Dir21
+Wire Wire Line
+	2650 10550 2750 10550
+Wire Wire Line
+	2750 10450 2650 10450
+Text Label 2650 10550 2    50   ~ 0
+Step21
+$Sheet
+S 2750 10250 500  350 
+U 61853C76
+F0 "sheet61853C6A" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 2750 10550 50 
+F3 "Dir" I L 2750 10450 50 
+$EndSheet
+Wire Wire Line
+	1600 10550 1700 10550
+Wire Wire Line
+	1700 10450 1600 10450
+$Sheet
+S 1700 10250 500  350 
+U 61853C7C
+F0 "sheet61853C6B" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 1700 10550 50 
+F3 "Dir" I L 1700 10450 50 
+$EndSheet
+Text Label 3650 10450 2    50   ~ 0
+Dir22
+Wire Wire Line
+	3650 10550 3750 10550
+Wire Wire Line
+	3750 10450 3650 10450
+$Sheet
+S 3750 10250 500  350 
+U 61853C84
+F0 "sheet61853C6C" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 3750 10550 50 
+F3 "Dir" I L 3750 10450 50 
+$EndSheet
+$Comp
+L Arduino_MEGA_2560-Rev3:SMARTPRJ_PINHD-1X8 PWML1
+U 1 1 5A6006FB
+P 6700 3950
+F 0 "PWML1" H 5850 3850 70  0000 L BNN
+F 1 "8x1F-H8.5" H 6451 3450 70  0000 L BNN
+F 2 "Arduino_MEGA_2560-Rev3:SMARTPRJ_1X08" H 6690 3740 65  0001 L TNN
+F 3 "" H 6700 3950 60  0001 C CNN
+	1    6700 3950
+	1    0    0    1   
+$EndComp
+Text Label 3650 10550 2    50   ~ 0
+Step22
+Text Label 6900 6300 0    50   ~ 0
+Dir20
+Text Label 6900 6200 0    50   ~ 0
+Step20
+Wire Wire Line
+	6600 6200 6900 6200
+Wire Wire Line
+	6600 6300 6900 6300
+Text Label 6900 6100 0    50   ~ 0
+Dir21
+Text Label 6900 6000 0    50   ~ 0
+Step21
+Text Label 6900 5900 0    50   ~ 0
+Dir22
+Text Label 6900 5800 0    50   ~ 0
+Step22
+Wire Wire Line
+	6900 6100 6600 6100
+Wire Wire Line
+	6600 6000 6900 6000
+Wire Wire Line
+	6900 5900 6600 5900
+Wire Wire Line
+	6900 5800 6600 5800
+Text Label 1600 11400 2    50   ~ 0
+Step23
+Text Label 1600 11300 2    50   ~ 0
+Dir23
+Text Label 2650 11300 2    50   ~ 0
+Dir24
+Wire Wire Line
+	2650 11400 2750 11400
+Wire Wire Line
+	2750 11300 2650 11300
+Text Label 2650 11400 2    50   ~ 0
+Step24
+$Sheet
+S 2750 11100 500  350 
+U 618BA597
+F0 "sheet618BA58B" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 2750 11400 50 
+F3 "Dir" I L 2750 11300 50 
+$EndSheet
+Wire Wire Line
+	1600 11400 1700 11400
+Wire Wire Line
+	1700 11300 1600 11300
+$Sheet
+S 1700 11100 500  350 
+U 618BA59D
+F0 "sheet618BA58C" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 1700 11400 50 
+F3 "Dir" I L 1700 11300 50 
+$EndSheet
+Text Label 3650 11300 2    50   ~ 0
+Dir25
+Wire Wire Line
+	3650 11400 3750 11400
+Wire Wire Line
+	3750 11300 3650 11300
+$Sheet
+S 3750 11100 500  350 
+U 618BA5A4
+F0 "sheet618BA58D" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 3750 11400 50 
+F3 "Dir" I L 3750 11300 50 
+$EndSheet
+Text Label 3650 11400 2    50   ~ 0
+Step25
+Wire Wire Line
+	6600 5250 6900 5250
+Wire Wire Line
+	6600 5150 6900 5150
+Text Label 6900 5250 0    50   ~ 0
+Dir23
+Text Label 6900 5150 0    50   ~ 0
+Step23
+Wire Wire Line
+	6600 5050 6900 5050
+Wire Wire Line
+	6600 4950 6900 4950
+Text Label 6900 5050 0    50   ~ 0
+Dir24
+Text Label 6900 4950 0    50   ~ 0
+Step24
+Wire Wire Line
+	6600 4850 6900 4850
+Wire Wire Line
+	6600 4750 6900 4750
+Text Label 6900 4850 0    50   ~ 0
+Dir25
+Text Label 6900 4750 0    50   ~ 0
+Step25
+Wire Wire Line
+	6600 4550 6300 4550
+Wire Wire Line
+	6600 4650 6300 4650
+Text Label 6300 4550 2    50   ~ 0
+Dir26
+Text Label 6300 4650 2    50   ~ 0
+Step26
+Text Label 1600 12100 2    50   ~ 0
+Step26
+Text Label 1600 12000 2    50   ~ 0
+Dir26
+Text Label 2650 12000 2    50   ~ 0
+Dir27
+Wire Wire Line
+	2650 12100 2750 12100
+Wire Wire Line
+	2750 12000 2650 12000
+Text Label 2650 12100 2    50   ~ 0
+Step27
+$Sheet
+S 2750 11800 500  350 
+U 618FBCF1
+F0 "sheet618FBCE5" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 2750 12100 50 
+F3 "Dir" I L 2750 12000 50 
+$EndSheet
+Wire Wire Line
+	1600 12100 1700 12100
+Wire Wire Line
+	1700 12000 1600 12000
+$Sheet
+S 1700 11800 500  350 
+U 618FBCF7
+F0 "sheet618FBCE6" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 1700 12100 50 
+F3 "Dir" I L 1700 12000 50 
+$EndSheet
+Text Label 3650 12000 2    50   ~ 0
+Dir28
+Wire Wire Line
+	3650 12100 3750 12100
+Wire Wire Line
+	3750 12000 3650 12000
+$Sheet
+S 3750 11800 500  350 
+U 618FBCFE
+F0 "sheet618FBCE7" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 3750 12100 50 
+F3 "Dir" I L 3750 12000 50 
+$EndSheet
+Text Label 3650 12100 2    50   ~ 0
+Step28
+Wire Wire Line
+	4750 3350 4450 3350
+Wire Wire Line
+	4750 3450 4450 3450
+Text Label 4450 3350 2    50   ~ 0
+Dir27
+Text Label 4450 3450 2    50   ~ 0
+Step27
+Wire Wire Line
+	4750 3150 4450 3150
+Wire Wire Line
+	4750 3250 4450 3250
+Text Label 4450 3150 2    50   ~ 0
+Dir28
+Text Label 4450 3250 2    50   ~ 0
+Step28
+Wire Wire Line
+	4750 2950 4450 2950
+Wire Wire Line
+	4750 3050 4450 3050
+Text Label 4450 3050 2    50   ~ 0
+Step29
+Wire Wire Line
+	4750 2750 4450 2750
+Wire Wire Line
+	4750 2850 4450 2850
+Text Label 4450 2750 2    50   ~ 0
+Dir30
+Text Label 4450 2850 2    50   ~ 0
+Step30
+Text Label 4450 2950 2    50   ~ 0
+Dir29
+Text Label 1650 12650 2    50   ~ 0
+Dir29
+Wire Wire Line
+	1650 12750 1750 12750
+Wire Wire Line
+	1750 12650 1650 12650
+Text Label 1650 12750 2    50   ~ 0
+Step29
+$Sheet
+S 1750 12450 500  350 
+U 6193E98E
+F0 "sheet6193E985" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 1750 12750 50 
+F3 "Dir" I L 1750 12650 50 
+$EndSheet
+Text Label 2650 12650 2    50   ~ 0
+Dir30
+Wire Wire Line
+	2650 12750 2750 12750
+Wire Wire Line
+	2750 12650 2650 12650
+$Sheet
+S 2750 12450 500  350 
+U 6193E995
+F0 "sheet6193E986" 50
+F1 "drive_conn.sch" 50
+F2 "Step" I L 2750 12750 50 
+F3 "Dir" I L 2750 12650 50 
+$EndSheet
+Text Label 2650 12750 2    50   ~ 0
+Step30
+Wire Wire Line
+	7700 7950 8050 7950
+Wire Wire Line
+	7700 8050 8000 8050
+Wire Wire Line
+	7700 8150 7950 8150
+Wire Wire Line
+	7700 8250 8050 8250
+Text Label 8650 7750 0    50   ~ 0
+U_vcc
+Wire Wire Line
+	8650 7750 8600 7750
+$Comp
+L Connector:Conn_01x04_Male J7
+U 1 1 6169CDFF
+P 7700 7350
+F 0 "J7" H 7700 7650 50  0000 C CNN
+F 1 "Usb_ext" H 7808 7540 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7700 7350 50  0001 C CNN
+F 3 "~" H 7700 7350 50  0001 C CNN
+	1    7700 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 7250 8050 7250
+Wire Wire Line
+	8050 7250 8050 7950
+Wire Wire Line
+	7900 7350 8000 7350
+Wire Wire Line
+	8000 7350 8000 8050
+Connection ~ 8000 8050
+Wire Wire Line
+	8000 8050 8050 8050
+Wire Wire Line
+	7900 7450 7950 7450
+Wire Wire Line
+	7950 7450 7950 8150
+Connection ~ 7950 8150
+Wire Wire Line
+	7950 8150 8050 8150
+$Comp
+L power:GND #PWR0101
+U 1 1 616C5416
+P 7850 7600
+F 0 "#PWR0101" H 7850 7350 50  0001 C CNN
+F 1 "GND" H 7855 7427 50  0000 C CNN
+F 2 "" H 7850 7600 50  0001 C CNN
+F 3 "" H 7850 7600 50  0001 C CNN
+	1    7850 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 7550 7900 7600
+Wire Wire Line
+	7900 7600 7850 7600
+$Comp
+L Device:C_Small C3
+U 1 1 616E02E2
+P 6400 7700
+F 0 "C3" V 6600 7700 50  0000 L CNN
+F 1 "10uF" V 6500 7600 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-15_Kemet-U_Pad2.25x2.35mm_HandSolder" H 6400 7700 50  0001 C CNN
+F 3 "~" H 6400 7700 50  0001 C CNN
+	1    6400 7700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 7700 6300 7700
+Connection ~ 6300 7700
+$Comp
+L power:GND #PWR0102
+U 1 1 61735182
+P 6600 7700
+F 0 "#PWR0102" H 6600 7450 50  0001 C CNN
+F 1 "GND" H 6605 7527 50  0000 C CNN
+F 2 "" H 6600 7700 50  0001 C CNN
+F 3 "" H 6600 7700 50  0001 C CNN
+	1    6600 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 7700 6600 7700
 $EndSCHEMATC
