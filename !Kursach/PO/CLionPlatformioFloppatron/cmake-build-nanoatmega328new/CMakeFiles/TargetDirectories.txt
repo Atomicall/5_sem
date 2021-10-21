@@ -1,0 +1,5 @@
+D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new/CMakeFiles/Production.dir
+D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new/CMakeFiles/edit_cache.dir
+D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new/CMakeFiles/Debug.dir
+D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new/CMakeFiles/Z_DUMMY_TARGET.dir
+D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new/CMakeFiles/rebuild_cache.dir

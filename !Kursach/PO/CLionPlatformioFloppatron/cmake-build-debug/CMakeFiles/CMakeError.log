@@ -1,0 +1,64 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_5236b\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_5236b.dir\build.make /nologo -L                  CMakeFiles\cmTC_5236b.dir\build
+Building C object CMakeFiles/cmTC_5236b.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe    -o CMakeFiles\cmTC_5236b.dir\CMakeCCompilerABI.c.obj -c "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\share\cmake-3.20\Modules\CMakeCCompilerABI.c"
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.24.28316 для x86
+(C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+
+cl: командная строка warning D9035: использование параметра "o" нежелательно, он будет удален в следующих выпусках
+CMakeCCompilerABI.c
+Linking C executable cmTC_5236b
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe "CMakeFiles\cmTC_5236b.dir\CMakeCCompilerABI.c.obj"  -o cmTC_5236b
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.24.28316 для x86
+(C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+
+cl: командная строка warning D9035: использование параметра "o" нежелательно, он будет удален в следующих выпусках
+Microsoft (R) Incremental Linker Version 14.24.28316.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerABI.c.exe 
+/out:cmTC_5236b.exe 
+CMakeFiles\cmTC_5236b.dir\CMakeCCompilerABI.c.obj 
+LINK : fatal error LNK1181: эх єфрхЄё  юЄъЁ√Є№ тїюфэющ Їрщы "CMakeFiles\cmTC_5236b.dir\CMakeCCompilerABI.c.obj"
+NMAKE : fatal error U1077: C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_5bcb8\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_5bcb8.dir\build.make /nologo -L                  CMakeFiles\cmTC_5bcb8.dir\build
+Building CXX object CMakeFiles/cmTC_5bcb8.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe    -o CMakeFiles\cmTC_5bcb8.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp"
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.24.28316 для x86
+(C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+
+cl: командная строка warning D9035: использование параметра "o" нежелательно, он будет удален в следующих выпусках
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_5bcb8
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe "CMakeFiles\cmTC_5bcb8.dir\CMakeCXXCompilerABI.cpp.obj"  -o cmTC_5bcb8
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.24.28316 для x86
+(C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+
+cl: командная строка warning D9035: использование параметра "o" нежелательно, он будет удален в следующих выпусках
+Microsoft (R) Incremental Linker Version 14.24.28316.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerABI.cpp.exe 
+/out:cmTC_5bcb8.exe 
+CMakeFiles\cmTC_5bcb8.dir\CMakeCXXCompilerABI.cpp.obj 
+LINK : fatal error LNK1181: эх єфрхЄё  юЄъЁ√Є№ тїюфэющ Їрщы "CMakeFiles\cmTC_5bcb8.dir\CMakeCXXCompilerABI.cpp.obj"
+NMAKE : fatal error U1077: C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+

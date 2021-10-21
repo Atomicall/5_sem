@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Vlad\Desktop\IIPYLABS\LAB2\LAB2\Source.cpp(190,42): warning C4244: =: преобразование "double" в "ULONGLONG", возможна потеря данных
+C:\Users\Vlad\Desktop\IIPYLABS\LAB2\LAB2\Source.cpp(191,42): warning C4244: =: преобразование "double" в "ULONGLONG", возможна потеря данных
+  LAB2.vcxproj -> C:\Users\Vlad\Desktop\IIPYLABS\LAB2\x64\Debug\LAB2.exe

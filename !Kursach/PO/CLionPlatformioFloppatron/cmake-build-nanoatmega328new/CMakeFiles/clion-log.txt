@@ -1,0 +1,23 @@
+"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=nanoatmega328new -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron
+-- The C compiler identification is MSVC 19.24.28316.0
+-- The CXX compiler identification is MSVC 19.24.28316.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new
+
+Cannot get compiler information:
+	Compiler exited with error code 1: C:\Users\vlad0\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe @C:\Users\vlad0\AppData\Local\Temp\response-file5700324941100125628 C:\Users\vlad0\AppData\Local\Temp\compiler-file9634224493918744918 | @response-file5700324941100125628=/TP -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p "-D'PLATFORMIO=50200'" "-D'ARDUINO_AVR_NANO'" "-D'F_CPU=16000000L'" "-D'ARDUINO_ARCH_AVR'" "-D'ARDUINO=10808'" "-D'__AVR_ATmega328P__'" /Be /Bd /EP
+	avr-g++.exe: error: /TP: No such file or directory
+	avr-g++.exe: error: /Be: No such file or directory
+	avr-g++.exe: error: /Bd: No such file or directory
+	avr-g++.exe: error: /EP: No such file or directory
+	
+	

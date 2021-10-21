@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CLionPlatformioFloppatron"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Production">
+				<Option working_dir="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 Production"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Debug">
+				<Option working_dir="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 Debug"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET">
+				<Option output="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/include"/>
+					<Add directory="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/cores/arduino"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/HID/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/SPI/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/Wire/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/toolchain-atmelavr/avr/include"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/tool-unity"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 Z_DUMMY_TARGET"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET/fast">
+				<Option output="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/include"/>
+					<Add directory="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/cores/arduino"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/HID/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/SPI/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/framework-arduino-avr/libraries/Wire/src"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/toolchain-atmelavr/avr/include"/>
+					<Add directory="C:/Users/vlad0/.platformio/packages/tool-unity"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 Z_DUMMY_TARGET/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/cmake-build-nanoatmega328new"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Labs\5_sem\!Kursach\PO\CLionPlatformioFloppatron\cmake-build-nanoatmega328new\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/src/main.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Labs/5_sem/!Kursach/PO/CLionPlatformioFloppatron/CMakeListsPrivate.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
