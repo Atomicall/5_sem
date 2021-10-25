@@ -16,18 +16,18 @@ $EndDescr
 $Comp
 L power:GND #PWR01
 U 1 1 61761F05
-P 900 950
-F 0 "#PWR01" H 900 700 50  0001 C CNN
-F 1 "GND" H 905 777 50  0000 C CNN
-F 2 "" H 900 950 50  0001 C CNN
-F 3 "" H 900 950 50  0001 C CNN
-	1    900  950 
+P 2200 3700
+F 0 "#PWR01" H 2200 3450 50  0001 C CNN
+F 1 "GND" H 2205 3527 50  0000 C CNN
+F 2 "" H 2200 3700 50  0001 C CNN
+F 3 "" H 2200 3700 50  0001 C CNN
+	1    2200 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  900  900  900 
+	2100 3650 2200 3650
 Wire Wire Line
-	900  900  900  950 
+	2200 3650 2200 3700
 $Comp
 L power:GND #PWR04
 U 1 1 6176BB9C
@@ -212,8 +212,6 @@ Wire Wire Line
 Connection ~ 7400 2050
 Connection ~ 7400 3450
 Wire Wire Line
-	7700 3450 7750 3450
-Wire Wire Line
 	6850 2600 7500 2600
 Wire Wire Line
 	8450 4000 8450 3750
@@ -263,16 +261,9 @@ Wire Wire Line
 	7600 1850 7750 1850
 Wire Wire Line
 	8450 1650 8450 1950
-Wire Wire Line
-	7850 1650 7950 1650
 Connection ~ 8450 1950
 Wire Wire Line
-	7700 3450 7700 3700
-Wire Wire Line
 	7450 3450 7400 3450
-Wire Wire Line
-	7650 3450 7700 3450
-Connection ~ 7700 3450
 Wire Wire Line
 	7400 3450 7400 4100
 Wire Wire Line
@@ -321,7 +312,7 @@ U 2 1 61758671
 P 8050 2700
 F 0 "U4" H 8100 3100 50  0000 C CNN
 F 1 "LM339" H 8150 3000 50  0000 C CNN
-F 2 "" H 8000 2800 50  0001 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 8000 2800 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=11574" H 8100 2900 50  0001 C CNN
 	2    8050 2700
 	1    0    0    -1  
@@ -332,7 +323,7 @@ U 3 1 6175976B
 P 8050 3350
 F 0 "U4" H 8050 3750 50  0000 C CNN
 F 1 "LM339" H 8050 3650 50  0000 C CNN
-F 2 "" H 8000 3450 50  0001 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 8000 3450 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=11574" H 8100 3550 50  0001 C CNN
 	3    8050 3350
 	1    0    0    -1  
@@ -343,20 +334,9 @@ U 4 1 6175A6B8
 P 8050 4000
 F 0 "U4" H 8050 4400 50  0000 C CNN
 F 1 "LM339" H 8050 4300 50  0000 C CNN
-F 2 "" H 8000 4100 50  0001 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 8000 4100 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=11574" H 8100 4200 50  0001 C CNN
 	4    8050 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 61760D45
-P 600 800
-F 0 "J1" H 708 981 50  0000 C CNN
-F 1 "Bat_In" H 708 890 50  0000 C CNN
-F 2 "" H 600 800 50  0001 C CNN
-F 3 "~" H 600 800 50  0001 C CNN
-	1    600  800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -365,7 +345,7 @@ U 1 1 61766C0B
 P 6350 1000
 F 0 "R6" H 6409 1046 50  0000 L CNN
 F 1 "20k" H 6409 955 50  0000 L CNN
-F 2 "" H 6350 1000 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 6350 1000 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=01414" H 6350 1000 50  0001 C CNN
 	1    6350 1000
 	1    0    0    -1  
@@ -387,7 +367,7 @@ U 1 1 6176AD6D
 P 6150 2000
 F 0 "R5" H 6209 2046 50  0000 L CNN
 F 1 "330 - 500" H 6209 1955 50  0000 L CNN
-F 2 "" H 6150 2000 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 6150 2000 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 6150 2000 50  0001 C CNN
 	1    6150 2000
 	1    0    0    -1  
@@ -398,7 +378,7 @@ U 1 1 6176FC80
 P 6350 1350
 F 0 "R7" H 6409 1396 50  0000 L CNN
 F 1 "10k" H 6409 1305 50  0000 L CNN
-F 2 "" H 6350 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 6350 1350 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 6350 1350 50  0001 C CNN
 	1    6350 1350
 	1    0    0    -1  
@@ -409,7 +389,7 @@ U 1 1 6178B29F
 P 7600 950
 F 0 "C3" H 7715 996 50  0000 L CNN
 F 1 "0.1uF" H 7715 905 50  0000 L CNN
-F 2 "" H 7638 800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7638 800 50  0001 C CNN
 F 3 "1206 smd у меня есть" H 7600 950 50  0001 C CNN
 	1    7600 950 
 	1    0    0    -1  
@@ -420,7 +400,7 @@ U 3 1 6179FCF7
 P 7250 1300
 F 0 "U3" H 7250 1500 50  0000 L CNN
 F 1 "LM358" H 7250 1450 50  0000 L CNN
-F 2 "" H 7250 1300 50  0001 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7250 1300 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=38123" H 7250 1300 50  0001 C CNN
 	3    7250 1300
 	1    0    0    -1  
@@ -431,7 +411,7 @@ U 1 1 617BFA10
 P 6850 1850
 F 0 "RV4" H 7100 1900 50  0000 R CNN
 F 1 "10k" H 7100 1800 50  0000 R CNN
-F 2 "" H 6850 1850 50  0001 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 6850 1850 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=32262" H 6850 1850 50  0001 C CNN
 	1    6850 1850
 	1    0    0    -1  
@@ -442,7 +422,7 @@ U 1 1 617C25ED
 P 6750 2600
 F 0 "RV3" H 6950 2650 50  0000 R CNN
 F 1 "10k" H 6950 2550 50  0000 R CNN
-F 2 "" H 6750 2600 50  0001 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 6750 2600 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=32262" H 6750 2600 50  0001 C CNN
 	1    6750 2600
 	1    0    0    -1  
@@ -453,7 +433,7 @@ U 1 1 617C4915
 P 6650 3250
 F 0 "RV2" H 6900 3300 50  0000 R CNN
 F 1 "10k" H 6900 3200 50  0000 R CNN
-F 2 "" H 6650 3250 50  0001 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 6650 3250 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=32262" H 6650 3250 50  0001 C CNN
 	1    6650 3250
 	1    0    0    -1  
@@ -464,7 +444,7 @@ U 1 1 617C633C
 P 6550 3900
 F 0 "RV1" H 6800 3950 50  0000 R CNN
 F 1 "10k" H 6800 3850 50  0000 R CNN
-F 2 "" H 6550 3900 50  0001 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 6550 3900 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=32262" H 6550 3900 50  0001 C CNN
 	1    6550 3900
 	1    0    0    -1  
@@ -475,7 +455,7 @@ U 1 1 617E348B
 P 7700 2450
 F 0 "R11" V 7600 2350 50  0000 C CNN
 F 1 "100k" V 7600 2500 50  0000 C CNN
-F 2 "" H 7700 2450 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7700 2450 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 7700 2450 50  0001 C CNN
 	1    7700 2450
 	0    1    1    0   
@@ -486,7 +466,7 @@ U 1 1 617E42CC
 P 7700 3100
 F 0 "R12" V 7600 3050 50  0000 C CNN
 F 1 "100k" V 7600 3200 50  0000 C CNN
-F 2 "" H 7700 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7700 3100 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 7700 3100 50  0001 C CNN
 	1    7700 3100
 	0    1    1    0   
@@ -495,9 +475,9 @@ $Comp
 L Device:R_Small R13
 U 1 1 617E50CE
 P 7700 3750
-F 0 "R13" V 7600 3700 50  0000 C CNN
+F 0 "R13" V 7600 3650 50  0000 C CNN
 F 1 "100k" V 7600 3850 50  0000 C CNN
-F 2 "" H 7700 3750 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7700 3750 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 7700 3750 50  0001 C CNN
 	1    7700 3750
 	0    1    1    0   
@@ -508,7 +488,7 @@ U 1 1 61800DFF
 P 10950 1350
 F 0 "R19" H 11009 1396 50  0000 L CNN
 F 1 "1k" H 11009 1305 50  0000 L CNN
-F 2 "" H 10950 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 10950 1350 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=42128" H 10950 1350 50  0001 C CNN
 	1    10950 1350
 	1    0    0    -1  
@@ -519,8 +499,8 @@ U 1 1 61800DF9
 P 10950 950
 F 0 "D5" V 10989 832 50  0000 R CNN
 F 1 "LED" V 10898 832 50  0000 R CNN
-F 2 "" H 10950 950 50  0001 C CNN
-F 3 "смотри в белщипе, какие понравятся" H 10950 950 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10950 950 50  0001 C CNN
+F 3 "смотри в белщипе, какие понравятся https://belchip.by/product/?selected_product=38569" H 10950 950 50  0001 C CNN
 	1    10950 950 
 	0    -1   -1   0   
 $EndComp
@@ -530,7 +510,7 @@ U 1 1 617FF4CE
 P 10600 1350
 F 0 "R18" H 10659 1396 50  0000 L CNN
 F 1 "1k" H 10659 1305 50  0000 L CNN
-F 2 "" H 10600 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 10600 1350 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=42128" H 10600 1350 50  0001 C CNN
 	1    10600 1350
 	1    0    0    -1  
@@ -541,8 +521,8 @@ U 1 1 617FF4C8
 P 10600 950
 F 0 "D4" V 10639 832 50  0000 R CNN
 F 1 "LED" V 10548 832 50  0000 R CNN
-F 2 "" H 10600 950 50  0001 C CNN
-F 3 "смотри в белщипе, какие понравятся" H 10600 950 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10600 950 50  0001 C CNN
+F 3 "смотри в белщипе, какие понравятся https://belchip.by/product/?selected_product=38569" H 10600 950 50  0001 C CNN
 	1    10600 950 
 	0    -1   -1   0   
 $EndComp
@@ -552,7 +532,7 @@ U 1 1 617FDACE
 P 10250 1350
 F 0 "R17" H 10309 1396 50  0000 L CNN
 F 1 "1k" H 10309 1305 50  0000 L CNN
-F 2 "" H 10250 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 10250 1350 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=42128" H 10250 1350 50  0001 C CNN
 	1    10250 1350
 	1    0    0    -1  
@@ -563,8 +543,8 @@ U 1 1 617FDAC8
 P 10250 950
 F 0 "D3" V 10289 832 50  0000 R CNN
 F 1 "LED" V 10198 832 50  0000 R CNN
-F 2 "" H 10250 950 50  0001 C CNN
-F 3 "смотри в белщипе, какие понравятся" H 10250 950 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10250 950 50  0001 C CNN
+F 3 "смотри в белщипе, какие понравятся https://belchip.by/product/?selected_product=38569" H 10250 950 50  0001 C CNN
 	1    10250 950 
 	0    -1   -1   0   
 $EndComp
@@ -574,7 +554,7 @@ U 1 1 617FC5DE
 P 9850 1350
 F 0 "R16" H 9909 1396 50  0000 L CNN
 F 1 "1k" H 9909 1305 50  0000 L CNN
-F 2 "" H 9850 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 9850 1350 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=42128" H 9850 1350 50  0001 C CNN
 	1    9850 1350
 	1    0    0    -1  
@@ -585,8 +565,8 @@ U 1 1 617FC5D8
 P 9850 950
 F 0 "D2" V 9889 832 50  0000 R CNN
 F 1 "LED" V 9798 832 50  0000 R CNN
-F 2 "" H 9850 950 50  0001 C CNN
-F 3 "смотри в белщипе, какие понравятся" H 9850 950 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9850 950 50  0001 C CNN
+F 3 "смотри в белщипе, какие понравятся https://belchip.by/product/?selected_product=38569" H 9850 950 50  0001 C CNN
 	1    9850 950 
 	0    -1   -1   0   
 $EndComp
@@ -596,7 +576,7 @@ U 1 1 617F7327
 P 9450 1350
 F 0 "R15" H 9509 1396 50  0000 L CNN
 F 1 "1k" H 9509 1305 50  0000 L CNN
-F 2 "" H 9450 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 9450 1350 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=42128" H 9450 1350 50  0001 C CNN
 	1    9450 1350
 	1    0    0    -1  
@@ -607,8 +587,8 @@ U 1 1 617F3A7E
 P 9450 950
 F 0 "D1" V 9489 832 50  0000 R CNN
 F 1 "LED" V 9398 832 50  0000 R CNN
-F 2 "" H 9450 950 50  0001 C CNN
-F 3 "смотри в белщипе, какие понравятся" H 9450 950 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9450 950 50  0001 C CNN
+F 3 "смотри в белщипе, какие понравятся https://belchip.by/product/?selected_product=38569" H 9450 950 50  0001 C CNN
 	1    9450 950 
 	0    -1   -1   0   
 $EndComp
@@ -618,7 +598,7 @@ U 1 1 617DF17F
 P 7750 1650
 F 0 "R14" V 7650 1550 50  0000 C CNN
 F 1 "100k" V 7650 1700 50  0000 C CNN
-F 2 "" H 7750 1650 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7750 1650 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 7750 1650 50  0001 C CNN
 	1    7750 1650
 	0    1    1    0   
@@ -629,7 +609,7 @@ U 1 1 61855D1D
 P 7550 3450
 F 0 "R9" V 7650 3350 50  0000 C CNN
 F 1 "100k" V 7650 3500 50  0000 C CNN
-F 2 "" H 7550 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7550 3450 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 7550 3450 50  0001 C CNN
 	1    7550 3450
 	0    1    1    0   
@@ -638,9 +618,9 @@ $Comp
 L Device:R_Small R10
 U 1 1 619A15E8
 P 7550 4100
-F 0 "R10" V 7650 4000 50  0000 C CNN
-F 1 "100k" V 7650 4150 50  0000 C CNN
-F 2 "" H 7550 4100 50  0001 C CNN
+F 0 "R10" V 7650 4050 50  0000 C CNN
+F 1 "100k" V 7650 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7550 4100 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 7550 4100 50  0001 C CNN
 	1    7550 4100
 	0    1    1    0   
@@ -651,7 +631,7 @@ U 1 1 619AEA79
 P 7550 2800
 F 0 "R8" V 7650 2700 50  0000 C CNN
 F 1 "100k" V 7650 2850 50  0000 C CNN
-F 2 "" H 7550 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7550 2800 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 7550 2800 50  0001 C CNN
 	1    7550 2800
 	0    1    1    0   
@@ -662,7 +642,7 @@ U 2 1 61799691
 P 7250 1300
 F 0 "U3" H 7250 1667 50  0000 C CNN
 F 1 "LM358" H 7250 1576 50  0000 C CNN
-F 2 "" H 7250 1300 50  0001 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7250 1300 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=38123" H 7250 1300 50  0001 C CNN
 	2    7250 1300
 	1    0    0    -1  
@@ -696,7 +676,7 @@ U 5 1 6175C157
 P 8050 1950
 F 0 "U4" H 8200 2100 50  0000 L CNN
 F 1 "LM339" H 8200 2050 50  0000 L CNN
-F 2 "" H 8000 2050 50  0001 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 8000 2050 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=11574" H 8100 2150 50  0001 C CNN
 	5    8050 1950
 	1    0    0    -1  
@@ -707,15 +687,12 @@ U 1 1 61756CE7
 P 8050 1950
 F 0 "U4" H 8100 2300 50  0000 C CNN
 F 1 "LM339" H 8150 2200 50  0000 C CNN
-F 2 "" H 8000 2050 50  0001 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 8000 2050 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=11574" H 8100 2150 50  0001 C CNN
 	1    8050 1950
 	1    0    0    -1  
 $EndComp
 Connection ~ 7400 4100
-Connection ~ 7950 1650
-Wire Wire Line
-	7950 1650 8450 1650
 Wire Wire Line
 	7400 4100 7400 4400
 Wire Wire Line
@@ -729,12 +706,10 @@ P 2350 1950
 F 0 "U1" H 2450 2400 50  0000 C CNN
 F 1 "SA555D" H 2550 2300 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3200 1550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3200 1550 50  0001 C CNN
+F 3 "https://belchip.by/product/?selected_product=00533" H 3200 1550 50  0001 C CNN
 	1    2350 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	800  800  1100 800 
 Wire Wire Line
 	2350 800  2350 1550
 $Comp
@@ -754,8 +729,8 @@ U 1 1 6176D4A1
 P 2900 2450
 F 0 "C2" H 3015 2496 50  0000 L CNN
 F 1 "???" H 3015 2405 50  0000 L CNN
-F 2 "" H 2938 2300 50  0001 C CNN
-F 3 "1206 smd у меня есть" H 2900 2450 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 2938 2300 50  0001 C CNN
+F 3 "https://belchip.by/product/?selected_product=00067" H 2900 2450 50  0001 C CNN
 	1    2900 2450
 	1    0    0    -1  
 $EndComp
@@ -786,7 +761,7 @@ U 1 1 617930DC
 P 2650 800
 F 0 "R3" V 2550 650 50  0000 C CNN
 F 1 "???" V 2550 800 50  0000 C CNN
-F 2 "" H 2650 800 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 2650 800 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=31132" H 2650 800 50  0001 C CNN
 	1    2650 800 
 	0    1    1    0   
@@ -802,7 +777,7 @@ U 1 1 6179D901
 P 1500 1150
 F 0 "R1" H 1559 1196 50  0000 L CNN
 F 1 "100k" H 1559 1105 50  0000 L CNN
-F 2 "" H 1500 1150 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 1500 1150 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 1500 1150 50  0001 C CNN
 	1    1500 1150
 	1    0    0    -1  
@@ -822,7 +797,7 @@ U 1 1 617AA2CE
 P 1850 2400
 F 0 "C1" H 1965 2446 50  0000 L CNN
 F 1 "0.1uF" H 1965 2355 50  0000 L CNN
-F 2 "" H 1888 2250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 1888 2250 50  0001 C CNN
 F 3 "1206 smd у меня есть" H 1850 2400 50  0001 C CNN
 	1    1850 2400
 	1    0    0    -1  
@@ -833,7 +808,7 @@ U 1 1 617AEE15
 P 1650 2050
 F 0 "R2" H 1709 2096 50  0000 L CNN
 F 1 "10k" H 1709 2005 50  0000 L CNN
-F 2 "" H 1650 2050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 1650 2050 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=30322" H 1650 2050 50  0001 C CNN
 	1    1650 2050
 	1    0    0    -1  
@@ -851,7 +826,7 @@ U 1 1 617BBFB5
 P 1500 1950
 F 0 "SW1" V 1600 2200 50  0000 R CNN
 F 1 "SW_Push" V 1450 2400 50  0000 R CNN
-F 2 "" H 1500 2150 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVPBF" H 1500 2150 50  0001 C CNN
 F 3 "кнопку найдем" H 1500 2150 50  0001 C CNN
 	1    1500 1950
 	0    -1   -1   0   
@@ -893,7 +868,7 @@ L Transistor_FET:2N7002E Q1
 U 1 1 617E5E04
 P 4150 1750
 F 0 "Q1" H 4354 1796 50  0000 L CNN
-F 1 "2N7002E" H 4354 1705 50  0000 L CNN
+F 1 "SSM3K333R,LF" H 4354 1705 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4350 1675 50  0001 L CIN
 F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 4150 1750 50  0001 L CNN
 	1    4150 1750
@@ -905,7 +880,6 @@ Wire Wire Line
 	1100 650  4250 650 
 Wire Wire Line
 	4250 650  4250 1550
-Connection ~ 1100 800 
 Wire Wire Line
 	1100 800  1500 800 
 Wire Wire Line
@@ -920,7 +894,7 @@ U 1 1 617FD9B3
 P 3700 1750
 F 0 "R4" V 3800 1750 50  0000 C CNN
 F 1 "390" V 3900 1750 50  0000 C CNN
-F 2 "" H 3700 1750 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 3700 1750 50  0001 C CNN
 F 3 "https://belchip.by/product/?selected_product=31132" H 3700 1750 50  0001 C CNN
 	1    3700 1750
 	0    1    1    0   
@@ -931,4 +905,274 @@ Wire Wire Line
 	3800 1750 3950 1750
 Text Notes 2950 2250 0    50   ~ 0
 На выходе ne555 стоит элемент ИЛИ,\nпоэтому, по идее, нет Z state\n(или 0, или Vin на выходе?)
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 61760D45
+P 1900 3550
+F 0 "J1" H 2008 3731 50  0000 C CNN
+F 1 "Bat_in" H 2008 3640 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 1900 3550 50  0001 C CNN
+F 3 "~" H 1900 3550 50  0001 C CNN
+	1    1900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 617EC4C1
+P 750 3550
+F 0 "J2" H 858 3731 50  0000 C CNN
+F 1 "Bat" H 858 3640 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 750 3550 50  0001 C CNN
+F 3 "~" H 750 3550 50  0001 C CNN
+	1    750  3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 617F90B7
+P 1050 3700
+F 0 "#PWR012" H 1050 3450 50  0001 C CNN
+F 1 "GND" H 1055 3527 50  0000 C CNN
+F 2 "" H 1050 3700 50  0001 C CNN
+F 3 "" H 1050 3700 50  0001 C CNN
+	1    1050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  3650 1050 3650
+Wire Wire Line
+	1050 3650 1050 3700
+Text Label 2200 3550 0    50   ~ 0
+Bat_in
+Wire Wire Line
+	2200 3550 2100 3550
+Connection ~ 2100 3550
+Text Label 850  800  2    50   ~ 0
+Bat_in
+Wire Wire Line
+	850  800  1100 800 
+Connection ~ 1100 800 
+Wire Wire Line
+	2900 4700 2900 4400
+Wire Wire Line
+	3100 4700 2900 4700
+Wire Wire Line
+	2900 4950 2900 5150
+Wire Wire Line
+	3100 4950 2900 4950
+Wire Wire Line
+	3100 4900 3100 4950
+$Comp
+L Device:CP_Small C6
+U 1 1 6191B32F
+P 3100 4800
+F 0 "C6" H 3300 4750 50  0000 R CNN
+F 1 "100uF" H 3600 4850 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3100 4800 50  0001 C CNN
+F 3 "https://belchip.by/product/?selected_product=08969" H 3100 4800 50  0001 C CNN
+	1    3100 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 4400 2    50   Output ~ 0
+Vout_12V
+Wire Wire Line
+	1700 5150 2300 5150
+$Comp
+L Device:C_Small C4
+U 1 1 6191B337
+P 750 4900
+F 0 "C4" H 842 4946 50  0000 L CNN
+F 1 "10uF" H 842 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 750 4900 50  0001 C CNN
+F 3 "1206 smd у меня есть" H 750 4900 50  0001 C CNN
+	1    750  4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 4400
+Wire Wire Line
+	2300 4400 2300 4550
+Wire Wire Line
+	2300 5150 2700 5150
+Connection ~ 2300 5150
+Wire Wire Line
+	2300 5100 2300 5150
+Connection ~ 2700 4400
+Wire Wire Line
+	2700 4400 2900 4400
+Connection ~ 2700 5150
+Wire Wire Line
+	2700 5150 2900 5150
+Connection ~ 1700 5150
+Wire Wire Line
+	2700 4900 2700 5150
+Wire Wire Line
+	2700 4400 2700 4700
+$Comp
+L Device:C_Small C5
+U 1 1 6191B34A
+P 2700 4800
+F 0 "C5" H 2792 4846 50  0000 L CNN
+F 1 "10uF" H 2792 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2700 4800 50  0001 C CNN
+F 3 "1206 smd у меня есть" H 2700 4800 50  0001 C CNN
+	1    2700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_Small RV5
+U 1 1 6191B350
+P 2300 4650
+F 0 "RV5" H 2250 4700 50  0000 R CNN
+F 1 "100k" H 2250 4600 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 2300 4650 50  0001 C CNN
+F 3 "https://belchip.by/product/?selected_product=32262" H 2300 4650 50  0001 C CNN
+	1    2300 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 6191B356
+P 2300 5000
+F 0 "R20" H 2359 5046 50  0000 L CNN
+F 1 "2.2k" H 2359 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 2300 5000 50  0001 C CNN
+F 3 "https://belchip.by/product/?selected_product=01392" H 2300 5000 50  0001 C CNN
+	1    2300 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2100 4400
+$Comp
+L Device:D_Schottky_Small D6
+U 1 1 6191B35D
+P 2200 4400
+F 0 "D6" H 2200 4193 50  0000 C CNN
+F 1 "SS34" H 2200 4284 50  0000 C CNN
+F 2 "Diode_SMD:D_SMC" V 2200 4400 50  0001 C CNN
+F 3 "https://belchip.by/product/?selected_product=18354" V 2200 4400 50  0001 C CNN
+	1    2200 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 4750 2000 4750
+Wire Wire Line
+	2100 4400 2100 4750
+Wire Wire Line
+	1850 4400 2100 4400
+$Comp
+L Device:L L1
+U 1 1 6191B367
+P 1700 4400
+F 0 "L1" V 1890 4400 50  0000 C CNN
+F 1 "22uH" V 1799 4400 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1210A" H 1700 4400 50  0001 C CNN
+F 3 "типо такого https://belchip.by/product/?selected_product=37361" H 1700 4400 50  0001 C CNN
+	1    1700 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	750  5000 750  5150
+Wire Wire Line
+	750  4750 750  4800
+$Comp
+L Regulator_Switching:MT3608 U5
+U 1 1 6191B372
+P 1700 4850
+F 0 "U5" H 1700 5217 50  0000 C CNN
+F 1 "MT3608" H 1700 5126 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 1750 4600 50  0001 L CIN
+F 3 "ну у меня же" H 1450 5300 50  0001 C CNN
+	1    1700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 6191B379
+P 1700 5150
+F 0 "#PWR013" H 1700 4900 50  0001 C CNN
+F 1 "GND" H 1705 4977 50  0000 C CNN
+F 2 "" H 1700 5150 50  0001 C CNN
+F 3 "" H 1700 5150 50  0001 C CNN
+	1    1700 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  4750 750  4750
+Wire Wire Line
+	2300 4400 2700 4400
+Wire Wire Line
+	2300 4750 2300 4900
+Wire Wire Line
+	2200 4650 2200 4950
+Text Label 700  4750 2    50   ~ 0
+Bat_in
+Wire Wire Line
+	1400 4750 1100 4750
+Connection ~ 750  4750
+Wire Wire Line
+	750  5150 1700 5150
+Wire Wire Line
+	1550 4400 1100 4400
+Wire Wire Line
+	1100 4400 1100 4750
+Connection ~ 1100 4750
+Wire Wire Line
+	1100 4750 750  4750
+Wire Wire Line
+	3250 4400 2900 4400
+Connection ~ 2900 4400
+Wire Wire Line
+	2000 4950 2200 4950
+Wire Wire Line
+	950  3550 1350 3550
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 61994EBA
+P 1450 3350
+F 0 "J3" V 1512 3394 50  0000 L CNN
+F 1 "Bat_en" V 1603 3394 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 1450 3350 50  0001 C CNN
+F 3 "~" H 1450 3350 50  0001 C CNN
+	1    1450 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 3550 2100 3550
+Wire Wire Line
+	1400 4950 1100 4950
+Wire Wire Line
+	1100 4950 1100 4750
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 619B7D83
+P 3300 3600
+F 0 "J4" H 3408 3781 50  0000 C CNN
+F 1 "V_Out" H 3408 3690 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 3300 3600 50  0001 C CNN
+F 3 "~" H 3300 3600 50  0001 C CNN
+	1    3300 3600
+	-1   0    0    1   
+$EndComp
+Text GLabel 2950 3500 0    50   Input ~ 0
+Vout_12V
+Wire Wire Line
+	3100 3500 2950 3500
+$Comp
+L power:GND #PWR014
+U 1 1 619D3748
+P 2900 3600
+F 0 "#PWR014" H 2900 3350 50  0001 C CNN
+F 1 "GND" H 2905 3427 50  0000 C CNN
+F 2 "" H 2900 3600 50  0001 C CNN
+F 3 "" H 2900 3600 50  0001 C CNN
+	1    2900 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3600 3100 3600
+Wire Wire Line
+	7650 3450 7750 3450
+Wire Wire Line
+	7850 1650 8450 1650
+Text Notes 1200 4200 0    50   ~ 0
+какой найдем на самом делу
 $EndSCHEMATC
