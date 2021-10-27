@@ -1,0 +1,133 @@
+GED
+
+	Undo Commands
+	     1.	Move
+	     2.	Paste
+	     3.	Delete
+	     4.	Delete
+	     5.	Delete
+	     6.	Delete
+	     7.	Move
+	     8.	Move
+	     9.	Paste
+	    10.	Move
+	    11.	Update Symbol or Block
+	    12.	Update Symbol or Block
+	    13.	Properties
+	    14.	Insert Node
+	    15.	Move
+	    16.	Paste
+	    17.	Move
+	    18.	Delete
+	    19.	Update Symbol or Block
+	    20.	Insert Node
+	    21.	Insert Symbol
+	    22.	Delete
+	    23.	Properties
+	    24.	Move
+	    25.	Paste
+	    26.	Properties
+	    27.	Properties
+	    28.	Properties
+	    29.	Properties
+	    30.	Properties
+	    31.	Properties
+	    32.	Move
+	    33.	Paste
+	    34.	Move
+	    35.	Paste
+	    36.	Move
+	    37.	Paste
+	    38.	Move
+	    39.	Paste
+	    40.	Move
+	    41.	Paste
+	    42.	Move
+	    43.	Paste
+	    44.	Move
+	    45.	Move
+	    46.	Move
+	    47.	Paste
+	    48.	Properties
+	    49.	Insert Node
+	    50.	Insert Node
+	    51.	Move
+	    52.	Paste
+	    53.	Move
+	    54.	Paste
+	    55.	Insert Node
+	    56.	Move
+	    57.	Paste
+	    58.	Insert Symbol
+	    59.	Properties
+	    60.	Insert Bus
+	    61.	Move
+	    62.	Delete
+	    63.	Insert Node
+	    64.	Insert Node
+	    65.	Delete
+	    66.	Insert Bus
+	    67.	Properties
+	    68.	Properties
+	    69.	Properties
+	    70.	Move
+	    71.	Paste
+	    72.	Move
+	    73.	Paste
+	    74.	Insert Node
+	    75.	Insert Node
+	    76.	Insert Node
+	    77.	Insert Bus
+	    78.	Move
+	    79.	Move
+	    80.	Paste
+	    81.	Properties
+	    82.	Properties
+	    83.	Insert Node
+	    84.	Insert Node
+	    85.	Properties
+	    86.	Move
+	    87.	Paste
+	    88.	Properties
+	    89.	Insert Symbol
+	    90.	Insert Symbol
+	    91.	Insert Node
+	    92.	Insert Node
+	    93.	Insert Symbol
+	    94.	Delete
+	    95.	Move
+	    96.	Insert Symbol
+	    97.	Insert Node
+	    98.	Insert Node
+	    99.	Insert Node
+	   100.	Insert Node
+
+
+WED
+
+	Undo Commands
+	     1.	Insert Node or Bus
+	     2.	Insert Node or Bus
+	     3.	Arbitrary Value
+			 *** 
+	     4.	Arbitrary Value
+			 *** 
+	     5.	Edit Waveform
+	     6.	Delete Waveform Interval
+			 *** 
+	     7.	Delete Waveform Interval
+			 *** 
+
+
+RPW
+
+	Undo Commands
+	     1.	||Simulation Report||Simulator||Simulation Waveforms
+
+
+RPW
+
+	Undo Commands
+	     1.	||Compilation Report||Flow Summary
+
+
