@@ -1,0 +1,18 @@
+﻿  lab4.cpp
+C:\Users\Vlad\Desktop\4\lab4 _Работает_ насторена динамически — копия — копия\lab4\lab4.cpp(50,41): warning C4244: аргумент: преобразование "double" в "_Tp", возможна потеря данных
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\Vlad\Desktop\4\lab4 _Работает_ насторена динамически — копия — копия\lab4\lab4.cpp(50,29): warning C4244: аргумент: преобразование "double" в "_Tp", возможна потеря данных
+          with
+          [
+              _Tp=int
+          ]
+     Создается библиотека C:\Users\Vlad\Desktop\4\lab4 _Работает_ насторена динамически — копия — копия\x64\Release\lab4.lib и объект C:\Users\Vlad\Desktop\4\lab4 _Работает_ насторена динамически — копия — копия\x64\Release\lab4.exp
+  Создание кода
+  1 of 135 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    4 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  lab4.vcxproj -> C:\Users\Vlad\Desktop\4\lab4 _Работает_ насторена динамически — копия — копия\x64\Release\lab4.exe

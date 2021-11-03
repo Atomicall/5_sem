@@ -1,0 +1,18 @@
+﻿  lab4.cpp
+D:\Labs\5_sem\Iipu\lab4 _camera\lab4\lab4.cpp(50,41): warning C4244: аргумент: преобразование "double" в "_Tp", возможна потеря данных
+          with
+          [
+              _Tp=int
+          ]
+D:\Labs\5_sem\Iipu\lab4 _camera\lab4\lab4.cpp(50,29): warning C4244: аргумент: преобразование "double" в "_Tp", возможна потеря данных
+          with
+          [
+              _Tp=int
+          ]
+     Создается библиотека D:\Labs\5_sem\Iipu\lab4 _camera\x64\Release\lab4.lib и объект D:\Labs\5_sem\Iipu\lab4 _camera\x64\Release\lab4.exp
+  Создание кода
+  131 of 135 functions (97.0%) were compiled, the rest were copied from previous compilation.
+    30 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  lab4.vcxproj -> D:\Labs\5_sem\Iipu\lab4 _camera\x64\Release\lab4.exe
