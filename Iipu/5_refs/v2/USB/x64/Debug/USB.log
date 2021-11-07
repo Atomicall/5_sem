@@ -1,0 +1,7 @@
+﻿  USB.cpp
+D:\Labs\5_sem\Iipu\5_refs\v2\USB\USB.cpp(1,1): warning C4005: UNICODE: изменение макроопределения
+D:\Labs\5_sem\Iipu\5_refs\v2\USB\USB.cpp : message : см. предыдущее определение "UNICODE"
+D:\Labs\5_sem\Iipu\5_refs\v2\USB\USB.cpp(52): warning C4715: handleToName: значение возвращается не при всех путях выполнения
+D:\Labs\5_sem\Iipu\5_refs\v2\USB\USB.cpp(59): warning C4715: handleToFriendlyName: значение возвращается не при всех путях выполнения
+D:\Labs\5_sem\Iipu\5_refs\v2\USB\USB.cpp(74): warning C4715: nameToHandle: значение возвращается не при всех путях выполнения
+  USB.vcxproj -> D:\Labs\5_sem\Iipu\5_refs\v2\x64\Debug\USB.exe

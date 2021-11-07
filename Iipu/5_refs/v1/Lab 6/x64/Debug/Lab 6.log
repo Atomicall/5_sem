@@ -1,0 +1,17 @@
+﻿  ejectDevice.c
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\ejectDevice.c(25,114): warning C4047: функция: "DWORD" отличается по уровням косвенного обращения от "void *"
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\ejectDevice.c(25,114): warning C4024: CreateFileA: различные типы для формального и фактического параметров 6
+  main.c
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\main.c(29,7): warning C4047: функция: "DWORD" отличается по уровням косвенного обращения от "void *"
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\main.c(29,7): warning C4024: CreateThread: различные типы для формального и фактического параметров 5
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\main.c(57,16): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\main.c(57,16): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\main.c(57,16): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\main.c(57,16): message : этот аргумент используется в качестве размера буфера
+  process.c
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\process.c(262,20): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\process.c(262,20): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\process.c(262,20): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+D:\Labs\5_sem\Iipu\5_refs\v1\Lab 6\process.c(262,20): message : этот аргумент используется в качестве размера буфера
+  Создание кода...
+  Lab 6.vcxproj -> D:\Labs\5_sem\Iipu\5_refs\v1\x64\Debug\IIPU_LAB5.exe
