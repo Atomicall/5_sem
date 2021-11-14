@@ -1,3 +1,4 @@
+#include "Defines.h"
 #include <Arduino.h>
 #include <TimerOne.h>
 #include "Floppas_Rack.h"
@@ -16,17 +17,15 @@ class Floppas {
   void startHandler();
   void stopHandler();
   void controlChangeHandler(byte channel, byte number, byte value);
-  Floppas_Rack* floppas;
-  uint8_t floppasRackCount = 1;
-  void startupSound(byte rackNum);
   void tick();
- protected:
 
+  Floppas_Rack* floppas;
+  uint8_t floppasRackCount = RACK_COUNT;
+  void startupSound(byte rackNum);
+
+ protected:
   void resetAll();
-  void togglePin(byte driveNum, byte pin, byte direction_pin);//
-  void haltAllDrives(); //
   void reset(byte rackNum);
 
-  static void blinkLED(); //
 
 };

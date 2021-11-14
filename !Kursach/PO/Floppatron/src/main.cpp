@@ -17,7 +17,7 @@ Floppas* fl;
  // Set up a timer at the resolution defined in MoppyInstrument.h
 
 ///
-MIDI_CREATE_INSTANCE(HardwareSerial, Serial, midi1);
+MIDI_CREATE_INSTANCE(HardwareSerial, Serial2, midi1);
 
 
 void hnd_int (){
@@ -42,20 +42,24 @@ void initMidi(){
     midi1.setHandleControlChange(hnd_ctrlCh);
     midi1.setHandlePitchBend(hnd_ptchB);
     midi1.begin(MIDI_CHANNEL_OMNI);
-    midi1.turnThruOff();
+    midi1.turnThruOff(); // Serial there!
+    Serial2.begin(200000);
 }
 
 void setup() {
-    Serial.begin(9600);
+
+    Serial.begin(115200);
+
     fl = new Floppas;
     fl->setup(1);
-
     Timer1.initialize(40);
     Timer1.attachInterrupt(hnd_int);
     initMidi();
-    Serial.begin(115200);
+
 }
 
 void loop() {
     midi1.read();
+    //while(!Serial2.available());
+    //Serial.write(Serial2.read());
 }

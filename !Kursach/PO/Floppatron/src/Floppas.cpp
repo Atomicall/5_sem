@@ -7,13 +7,23 @@ Floppas::Floppas() {
 }
 
 void Floppas::setup(uint8_t count) {
-    //Serial.write("Floppas setup");
-    this->floppasRackCount = LAST_RACK - FIRST_RACK + 1;
+    Serial.write("Floppas setup: racks: ");
+    Serial.write(RACK_COUNT);
+    Serial.write("\n");
+
+    //this->floppasRackCount = LAST_RACK - FIRST_RACK + 1;
+    this->floppasRackCount = RACK_COUNT;
     // [0] is empty
     floppas = new Floppas_Rack [floppasRackCount];
    /* for (;;){
     }*/
-   floppas[0].setupPinModes(12, 11, 10, 9, 8, 7);
+   uint8_t firstPin = 24;
+   //Todo
+   for (uint8_t i=0; i< RACK_COUNT; i++){
+
+       floppas[i].setupPinModes(24, 22, 28, 26, 32, 30);
+   }
+   //floppas[0].setupPinModes(12, 11, 10, 9, 8, 7);
    resetAll();
    delay(20); // Wait a half second for safety
     // Setup timer to handle interrupts for floppy driving
@@ -71,19 +81,13 @@ void Floppas::controlChangeHandler(byte channel, byte number, byte value) {
 
 void Floppas::resetAll() {
     for (int i=0; i < floppasRackCount; i++){
-        //Serial.write("Rack "); Serial.write(i);Serial.write(" Reset\n");
+        Serial.write("Rack "); Serial.write(i);Serial.write(" Reset\n");
         floppas[i].resetRack();
     }
 
 }
 
-void Floppas::togglePin(byte driveNum, byte pin, byte direction_pin) {
 
-}
-
-void Floppas::haltAllDrives() {
-
-}
 
 void Floppas::reset(byte rackNum) {
     floppas[rackNum].resetRack();
@@ -104,9 +108,7 @@ void Floppas::tick() {
 
 }
 
-void Floppas::blinkLED() {
 
-}
 
 void Floppas::startupSound(byte rackNum) {
     unsigned int chargeNotes[] = {
