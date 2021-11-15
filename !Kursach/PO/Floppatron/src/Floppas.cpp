@@ -1,35 +1,42 @@
 #include "../include/Floppas.h"
 
-#define FIRST_RACK 1
-#define LAST_RACK 1
 Floppas::Floppas() {
+    Serial.print("Floppas to setup: racks: ");
+    Serial.println(RACK_COUNT);
 
 }
 
-void Floppas::setup(uint8_t count) {
-    Serial.write("Floppas setup: racks: ");
-    Serial.write(RACK_COUNT);
-    Serial.write("\n");
+void Floppas::setup() {
 
-    //this->floppasRackCount = LAST_RACK - FIRST_RACK + 1;
     this->floppasRackCount = RACK_COUNT;
-    // [0] is empty
     floppas = new Floppas_Rack [floppasRackCount];
-   /* for (;;){
-    }*/
-   uint8_t firstPin = 24;
-   //Todo
-   for (uint8_t i=0; i< RACK_COUNT; i++){
+#ifdef RACK1
+    RACK1_m
+    floppas[0].setupPinModes(rack1);
+#endif
 
-       floppas[i].setupPinModes(24, 22, 28, 26, 32, 30);
-   }
-   //floppas[0].setupPinModes(12, 11, 10, 9, 8, 7);
+#ifdef RACK2
+    RACK2_m
+    floppas[1].setupPinModes(rack2);
+#endif
+
+#ifdef RACK3
+    RACK3_m
+    floppas[2].setupPinModes(rack3);
+#endif
+
+#ifdef RACK4
+    RACK4_m
+    floppas[3].setupPinModes(rack4);
+#endif
+
+#ifdef RACK5
+    RACK5_m
+    floppas[4].setupPinModes(rack5);
+#endif
+
    resetAll();
-   delay(20); // Wait a half second for safety
-    // Setup timer to handle interrupts for floppy driving
-    /*Timer1.initialize(TIMER_RESOLUTION); // Set up a timer at the resolution defined in MoppyInstrument.h
-    Timer1.attachInterrupt(tick); // Attach the tick function*/
-    //startupSound(FIRST_RACK);
+   delay(20);
 }
 
 void Floppas::systemMessage(uint8_t command, uint8_t *payload) {
@@ -81,7 +88,7 @@ void Floppas::controlChangeHandler(byte channel, byte number, byte value) {
 
 void Floppas::resetAll() {
     for (int i=0; i < floppasRackCount; i++){
-        Serial.write("Rack "); Serial.write(i);Serial.write(" Reset\n");
+        Serial.write("Rack "); Serial.print(i);Serial.write(" Reset\n");
         floppas[i].resetRack();
     }
 
@@ -100,7 +107,7 @@ void Floppas::tick() {
         if (floppas[d].currentPeriod > 0) {
             floppas[d].currentTick++;
             if (floppas[d].currentTick >= floppas[d].currentPeriod) {
-                floppas[d].toggleRack(3); // Drive 1 is on pins 2 and 3, etc.
+                floppas[d].toggleRack(3); //
                 floppas[d].currentTick = 0;
             }
         }
@@ -124,12 +131,7 @@ void Floppas::startupSound(byte rackNum) {
     while(i < 5) {
         if (millis() - 200 > lastRun) {
             lastRun = millis();
-           // Serial.write("Note ");
-           // Serial.write(toAscii(i));
-           // Serial.write("\n");
             floppas[rackNum].currentPeriod = chargeNotes[i++];
         }
     }
-
-
 }

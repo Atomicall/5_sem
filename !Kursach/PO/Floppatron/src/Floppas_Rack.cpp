@@ -13,18 +13,30 @@ void Floppas_Rack::setupPinModes(uint8_t d1S, uint8_t d1D, uint8_t d2S, uint8_t 
     drive[1].dirPin = d2D;
     drive[2].stepPin = d3S;
     drive[2].dirPin = d3D;
-    /*digitalWrite( drive[0].stepPin, HIGH);
-    digitalWrite( drive[1].stepPin, HIGH);
-    digitalWrite( drive[2].stepPin, HIGH);
-    digitalWrite( drive[0].dirPin, HIGH);
-    digitalWrite( drive[1].dirPin, HIGH);
-    digitalWrite( drive[2].dirPin, HIGH);*/
+}
+
+
+
+void Floppas_Rack::setupPinModes(uint8_t* pins){
+    for (uint8_t i=0; i< 6; i++){
+        pinMode(pins[i], OUTPUT);
+    }
+    for (uint8_t i=0; i< 3; i++){
+#ifdef DEBUG
+        Serial.print (String("Step is ") + i * 2 + "Dir is " + (i * 2) +1 + "\n");
+#endif
+        drive[i].stepPin = pins[i * 2];
+        drive[i].dirPin = pins[(i * 2)+1];
+#ifdef DEBUG
+        Serial.println("~~~\n");
+#endif
+    }
 
 }
 
-void Floppas_Rack::toggleRack(uint8_t whatDrives) {
+void Floppas_Rack::toggleRack(uint8_t whichDrives) {
 
-    for (int i = 0; i< whatDrives; i++){
+    for (int i = 0; i < whichDrives; i++){
     if (drive[i].currentPosition >= MAX_POSITION[0]) {
         drive[i].currentStateDir = HIGH;
         digitalWrite(drive[i].dirPin,HIGH);
@@ -44,7 +56,7 @@ void Floppas_Rack::toggleRack(uint8_t whatDrives) {
     digitalWrite(drive[i].stepPin, drive[i].currentStatePin);
         drive[i].currentStatePin = ~drive[i].currentStatePin;
 }
-    delay(5);
+   // delay(5); TOdo WTF
 }
 
 void Floppas_Rack::resetRack() {

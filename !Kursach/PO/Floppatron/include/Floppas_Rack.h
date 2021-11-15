@@ -28,7 +28,9 @@ class Floppas_Rack{
 
     void setupPinModes(uint8_t d1S, uint8_t d1D, uint8_t d2S, uint8_t d2D,
                                                     uint8_t d3S, uint8_t d3D);
-    void toggleRack(uint8_t whatDrives);
+    void setupPinModes (uint8_t* pins);
+
+    void toggleRack(uint8_t whichDrives);
     void resetRack();
     protected:
     uint8_t MAX_POSITION[3] = {158,158,158};
