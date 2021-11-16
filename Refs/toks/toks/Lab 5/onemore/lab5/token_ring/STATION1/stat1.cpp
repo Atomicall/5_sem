@@ -212,7 +212,7 @@ int main()
 	string AC = "1";
 	string DA = "";
 	string SA = "1";
-	string MESSAGE = "MESSAGE FROM 1 STATION TO ";
+	string MESSAGE = "STATion 1 SendS message TO ";
 	string FS = "";
 
 	boolean wantToSend=false;
@@ -220,7 +220,7 @@ int main()
 	while (TRUE)
 	{
 		ReadFile(hNamedPipe3, szBuf3, BUFSIZ, &cbRead3, NULL);
-		cout << endl << "READ: "<<szBuf3 << endl;
+		cout << endl << "Read from channel: "<<szBuf3 << endl;
 		
 		if (!wantToSend)
 		{
@@ -262,28 +262,32 @@ int main()
 			{
 				
 				string info = getINFO(str, DELIMETER);
-				cout << "GOT MESSAGE   :   " << info << endl;
+				cout << "Recieved MESSAGE:   " << info << endl;
 				toSend += getAllPackage(str, DELIMETER)+SPACE;
 				FS = getFS(str, DELIMETER);
 				bitset<6> temp(FS);
+				// 54 is 110110 
+				//A C R A C R <=> OK
 				temp[5] = 1; temp[4] = 1; temp[2] = 1; temp[1] = 1;
 				toSend += temp.to_string();
 			}
 			else
 			{
 				if (getString(str, 4) == SA)
+					// если получил свое же
 				{
 					
 					FS = getFS(str, DELIMETER);
 					bitset<6> temp(FS);
 					if (temp.to_ulong() == 54)
+						// 54 is 110110
 					{
 						wantToSend = false;
 						toSend = EMPTY_TOKEN;
 					}
 					else
 					{
-						
+						// again
 						toSend += DELIMETER + SPACE;
 						toSend += AC + SPACE;
 						toSend += DA + SPACE;

@@ -195,7 +195,7 @@ int main()
 	string AC = "1";
 	string DA = "";
 	string SA = "2";
-	string MESSAGE = "MESSAGE FROM 2 STATION TO ";
+	string MESSAGE = "STATion 2 SendS message TO ";
 	string FS = "";
 
 	boolean wantToSend = false;
@@ -203,7 +203,7 @@ int main()
 	while (TRUE)
 	{
 		ReadFile(hNamedPipe1, szBuf1, BUFSIZ, &cbRead1, NULL);
-		cout << endl << "READ: " << szBuf1 << endl;
+		cout << endl << "Read from channel: " << szBuf1 << endl;
 
 		if (!wantToSend)
 		{
@@ -248,7 +248,7 @@ int main()
 				//cout << "state 3" << endl;
 
 				string info = getINFO(str, DELIMETER);
-				cout << "GOT MESSAGE   :   " << info << endl;
+				cout << "Recieved MESSAGE:   " << info << endl;
 				toSend += getAllPackage(str, DELIMETER) + SPACE;
 				FS = getFS(str, DELIMETER);
 				bitset<6> temp(FS);
@@ -264,6 +264,7 @@ int main()
 					FS = getFS(str, DELIMETER);
 					bitset<6> temp(FS);
 					if (temp.to_ulong() == 54)
+						
 					{
 						//cout << "state 5" << endl;
 						wantToSend = false;
@@ -272,7 +273,7 @@ int main()
 					else
 					{
 						//cout << "state 6" << endl;
-
+					
 						toSend += DELIMETER + SPACE;
 						toSend += AC + SPACE;
 						toSend += DA + SPACE;
