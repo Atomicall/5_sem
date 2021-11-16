@@ -14,7 +14,7 @@ class Buffer {
 public:
     Buffer(){buff.resize(2048);};
     QString buff;
-    std::atomic<bool> is_busy = 0;
+
 };
 
 class ThreadInst : public QObject{

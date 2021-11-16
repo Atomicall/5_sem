@@ -48,18 +48,23 @@ void Floppas::deviceMessage(uint8_t subAddress, uint8_t command, uint8_t *payloa
 }
 
 void Floppas::noteOnHandler(byte channel, byte note, byte velocity) {
-    if(note <= MAX_FLOPPY_NOTE)
+    if(note <= MAX_FLOPPY_NOTE && channel < this->floppasRackCount)
     {
         floppas[channel].currentPeriod = floppas[channel].originalPeriod = noteDoubleTicks[note];
     }
 }
 
 void Floppas::noteOffHandler(byte channel, byte note, byte velocity) {
-    floppas[channel].currentPeriod = floppas[channel].originalPeriod = 0;
+    if ( channel < this->floppasRackCount){
+        floppas[channel].currentPeriod = floppas[channel].originalPeriod = 0;
+    }
 }
 
 void Floppas::pitchBendHandler(byte channel, int bend) {
-    floppas[channel].currentPeriod = floppas[channel].originalPeriod / pow(2.0, BEND_OCTAVES*(bend/(float)8192));
+    if ( channel < this->floppasRackCount) {
+        floppas[channel].currentPeriod =
+                floppas[channel].originalPeriod / pow(2.0, BEND_OCTAVES * (bend / (float) 8192));
+    }
 }
 
 void Floppas::startHandler() {
@@ -71,17 +76,16 @@ void Floppas::stopHandler() {
 }
 
 void Floppas::controlChangeHandler(byte channel, byte number, byte value) {
-    switch(number)
-    {
-        case 120:
-        {
-            floppas[channel].currentPeriod = floppas[channel].originalPeriod = 0;
-            break;
-        }
-        case 123:
-        {
-            floppas[channel].currentPeriod = floppas[channel].originalPeriod = 0;
-            break;
+    if ( channel < this->floppasRackCount) {
+        switch (number) {
+            case 120: {
+                floppas[channel].currentPeriod = floppas[channel].originalPeriod = 0;
+                break;
+            }
+            case 123: {
+                floppas[channel].currentPeriod = floppas[channel].originalPeriod = 0;
+                break;
+            }
         }
     }
 }
@@ -131,7 +135,7 @@ void Floppas::startupSound(byte rackNum) {
     while(i < 5) {
         if (millis() - 200 > lastRun) {
             lastRun = millis();
-            floppas[rackNum].currentPeriod = chargeNotes[i++];
+            floppas[rackNum-1].currentPeriod = chargeNotes[i++];
         }
     }
 }

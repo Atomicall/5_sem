@@ -105,7 +105,7 @@ int main() {
 			switch (ch) {
 			case(1):
 			{
-			SetSuspendState(FALSE, TRUE, FALSE);
+			SetSuspendState(FALSE, TRUE, TRUE);
 			break;
 			}
 			case(2):

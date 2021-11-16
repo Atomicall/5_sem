@@ -44,7 +44,7 @@ void Da_Videa() {
             double frame_width = camera.get(CAP_PROP_FRAME_WIDTH);
             double frame_height = camera.get(CAP_PROP_FRAME_HEIGHT);
 
-            video.open("hDa_Videa.avi",
+            video.open("Da_Videa.avi",
                        VideoWriter::fourcc('M','P','4','2'), // mpeg2 avi
                        20,
                        Size(frame_width,frame_height), true);
@@ -81,12 +81,12 @@ KeyboardEvent(int nCode, WPARAM wParam, LPARAM lParam) {
         ((wParam == WM_SYSKEYDOWN) ||
          (wParam == WM_KEYDOWN))) {
         KBDLLHOOKSTRUCT key = *reinterpret_cast<KBDLLHOOKSTRUCT*>(lParam);
-        if (key.vkCode == '1')
+        if (key.vkCode == 'P')
             {
             Da_Phota();
             cout << "Phota" << endl;
             }
-        if (key.vkCode == '2')
+        if (key.vkCode == 'O')
             {
             Da_Videa();
             cout << "Videa_toggle" << endl;

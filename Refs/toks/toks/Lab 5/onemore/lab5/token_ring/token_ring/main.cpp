@@ -15,28 +15,28 @@ int main(int argc, char* argv[])
 	LPSTR  SemaphoreName3 = "Semaphore3";
 	LPSTR  SemaphoreName4 = "Semaphore4";
 	HANDLE hSemaphore1 = CreateSemaphore(
-		NULL,				// нет атрибута
-		0,					// начальное состояние
-		1,					// максимальное состояние
-		SemaphoreName1	// имя семафора
+		NULL,				// 
+		0,					// начальное 
+		1,					// максимальное 
+		SemaphoreName1	// имя 
 	);
 	HANDLE hSemaphore2 = CreateSemaphore(
-		NULL,				// нет атрибута
-		0,					// начальное состояние
-		1,					// максимальное состояние
-		SemaphoreName2	// имя семафора
+		NULL,				
+		0,					
+		1,					
+		SemaphoreName2	
 	);
 	HANDLE hSemaphore3 = CreateSemaphore(
-		NULL,				// нет атрибута
-		0,					// начальное состояние
-		1,					// максимальное состояние
-		SemaphoreName3	// имя семафора
+		NULL,				
+		0,					
+		1,				
+		SemaphoreName3	
 	);
 	HANDLE hSemaphore4 = CreateSemaphore(
-		NULL,				// нет атрибута
-		0,					// начальное состояние
-		1,					// максимальное состояние
-		SemaphoreName4	// имя семафора
+		NULL,				
+		0,					
+		1,				
+		SemaphoreName4	
 	);
 	if (hSemaphore1 == NULL || hSemaphore2 == NULL || hSemaphore3 == NULL || hSemaphore4 == NULL)
 	{
@@ -45,10 +45,8 @@ int main(int argc, char* argv[])
 	}
 
 
-	//==============================================================================//
-	//								САМИ ПРОЦЕССЫ									//
-	//==============================================================================//
-	STARTUPINFO clientStartupInfo1;
+	
+	STARTUPINFO clientStartupInfo1; // создаем, стартуем
 	PROCESS_INFORMATION clientProcessInformation1;
 	LPSTR lpClientProcessName1 = "..\\Debug\\STATION1.exe";
 	startProcess(clientStartupInfo1, clientProcessInformation1, lpClientProcessName1, NULL);
@@ -68,13 +66,12 @@ int main(int argc, char* argv[])
 	ReleaseSemaphore(hSemaphore4, 1, NULL);
 	ShowWindow(hWnd, SW_HIDE);
 	WaitForSingleObject(hSemaphore4, INFINITE);
+	//ждем ,пока захватит
 	cout << "Connected." << endl<<endl;
 	Sleep(10000);
 	ShowWindow(hWnd, SW_SHOW);
-
 	bool isPause = false;
 	cout << "Press any key to pause and (q) to stop programm..." << endl;
-	
 	rewind(stdin);
 	while (_getch() != 'q')
 	{

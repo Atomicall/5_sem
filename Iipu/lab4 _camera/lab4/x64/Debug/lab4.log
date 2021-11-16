@@ -1,1 +1,12 @@
-﻿  lab4.vcxproj -> C:\Users\User\Desktop\bsuir\5th term\ИиПУ\labs\lab4\lab4\x64\Debug\lab4.exe
+﻿  lab4.cpp
+D:\Labs\5_sem\Iipu\lab4 _camera\lab4\lab4.cpp(50,41): warning C4244: аргумент: преобразование "double" в "_Tp", возможна потеря данных
+          with
+          [
+              _Tp=int
+          ]
+D:\Labs\5_sem\Iipu\lab4 _camera\lab4\lab4.cpp(50,29): warning C4244: аргумент: преобразование "double" в "_Tp", возможна потеря данных
+          with
+          [
+              _Tp=int
+          ]
+  lab4.vcxproj -> D:\Labs\5_sem\Iipu\lab4 _camera\x64\Debug\lab4.exe

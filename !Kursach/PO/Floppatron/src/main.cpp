@@ -64,6 +64,8 @@ void setup() {
     Timer1.attachInterrupt(hnd_int);
     initMidi_usb();
     initMidi_uart3();
+    fl->startupSound(1);
+    fl->startupSound(2);
 }
 
 void loop() {

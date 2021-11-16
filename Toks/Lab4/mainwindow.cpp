@@ -1,8 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QInputDialog>
+#include "math.h"
 
-#define AMAX 1
+#define AMAX 10
 #define COLLISION_WINDOW_DURATION 500
 
 MainWindow::MainWindow(QWidget *parent)
@@ -95,14 +96,15 @@ void ThreadInst::run_th()
     QThread::msleep(rand() % 100);
     int i;
     int attempts = 0;
-    while(runned) {
+
         bool flg =0; // need to send
         while (!flg && attempts < AMAX){
             emit (this->send_message("Sending; Attemp: " + QString::fromStdString(std::to_string(attempts) + "$ ") + messageNnum));
             if ( buffer.buff[0] == QChar(55)) // Collis
             {
+                attempts ++;
                 emit (this->send_message("JAM in $" + messageNnum));
-                QThread::msleep(COLLISION_WINDOW_DURATION);
+                QThread::msleep((rand() % (int)pow(2,attempts))*COLLISION_WINDOW_DURATION);
                 continue;
             }
             flg=1;
@@ -117,21 +119,22 @@ void ThreadInst::run_th()
                 flg = 0;
                 attempts++;
                 buffer.buff [0] = QChar(55);
-                QThread::msleep(100*2);
+                QThread::msleep(COLLISION_WINDOW_DURATION);
 
                 buffer.buff [0] = QChar(0);
-                emit (this->send_message("COLLISION w/attempt "+ QString::fromStdString(std::to_string(attempts)) + "$ "+ messageNnum ));
+                emit (this->send_message("COLLISION w/attempt "+ QString::fromStdString(std::to_string(attempts)) + "$ "+ messageNnum + "\n"));
                 if (attempts == AMAX){
                     emit (this->send_message("MAX ATTEMPST WITH $" + messageNnum));
                     return;
                 }
 
             }
-            emit (this->send_message("Send Succesfully $" + messageNnum));
-            attempts = 0;
-        }
 
-    }
+        }
+        emit (this->send_message("###Send Succesfully $" + messageNnum + "\n"));
+        attempts = 0;
+
+
 }
 
 void MainWindow::on_pushButton_2_clicked()

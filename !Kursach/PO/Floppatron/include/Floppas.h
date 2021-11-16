@@ -20,8 +20,6 @@ class Floppas {
   Floppas_Rack* floppas;
   uint8_t floppasRackCount;// = RACK_COUNT; //defines
 
-
-
   //useless?
   void startHandler();
   void stopHandler();
