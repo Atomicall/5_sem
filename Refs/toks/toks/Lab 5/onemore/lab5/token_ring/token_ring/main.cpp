@@ -14,9 +14,6 @@ int main(int argc, char* argv[])
 	LPSTR  SemaphoreName2 = "Semaphore2";
 	LPSTR  SemaphoreName3 = "Semaphore3";
 	LPSTR  SemaphoreName4 = "Semaphore4";
-	//==============================================================================//
-	//								СОЗДАНИЕ СЕМАФОРОВ								//
-	//==============================================================================//
 	HANDLE hSemaphore1 = CreateSemaphore(
 		NULL,				// нет атрибута
 		0,					// начальное состояние
