@@ -14,7 +14,7 @@
 
 
 // "Real" Amount of floppa racks. Each rack - 3 drives (6 pins total)
-#define FIRST_EVER_DRIVE_PIN 22 // is DirPin, next is StepPin = 24 for 1.1 (1st rack 1st drive)
+#define FIRST_EVER_DRIVE_PIN 22 // is DirPin, next is StepPin = 24 for 1.1 (1st rack 1st drives)
 #define FIRST_ODD_DRIVE_PIN 23
 //1.1 ( s = 24, d = 22)
 //then, 1.2 (s=28, d=26)

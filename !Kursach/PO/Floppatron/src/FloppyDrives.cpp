@@ -1,23 +1,18 @@
 #include "../include/MoppyInstruments/MoppyInstrument.h"
 #include "../include/MoppyInstruments/FloppyDrives.h"
 
+#define FIRST_DRIVE 1
+#define LAST_DRIVE 16
 
-// First drive being used for floppies, and the last drive.  Used for calculating
-// step and direction pins.
-const byte FIRST_DRIVE = 1;
-const byte LAST_DRIVE = 16;  // This sketch can handle only up to 9 drives (the max for Arduino Uno)
-
-// Maximum note number to attempt to play on floppy drives.  It's possible higher notes may work,
-// but they may also cause instability.
 const byte MAX_FLOPPY_NOTE = 127;
 
 /*NOTE: The arrays below contain unused zero-indexes to avoid having to do extra
  * math to shift the 1-based subAddresses to 0-based indexes here.  Unlike the previous
- * version of Moppy, we *will* be doing math to calculate which drive maps to which pin,
+ * version of Moppy, we *will* be doing math to calculate which drives maps to which pin,
  * so there are as many values as drives (plus the extra zero-index)
  */
 
- /*An array of maximum track positions for each floppy drive.  3.5" Floppies have
+ /*An array of maximum track positions for each floppy drives.  3.5" Floppies have
  80 tracks, 5.25" have 50.  These should be doubled, because each tick is now
  half a position (use 158 and 98).
  NOTE: Index zero of this array controls the "resetAll" function, and should be the
@@ -33,11 +28,11 @@ unsigned int FloppyDrives::currentPosition[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
  */
 int FloppyDrives::currentState[] = {0,0,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW};
 
-// Current period assigned to each drive.  0 = off.  Each period is two-ticks (as defined by
+// Current period assigned to each drives.  0 = off.  Each period is two-ticks (as defined by
 // TIMER_RESOLUTION in MoppyInstrument.h) long.
 unsigned int FloppyDrives::currentPeriod[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-// Tracks the current tick-count for each drive (see FloppyDrives::tick() below)
+// Tracks the current tick-count for each drives (see FloppyDrives::tick() below)
 unsigned int FloppyDrives::currentTick[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 // The period originally set by incoming messages (prior to any modifications from pitch-bending)
@@ -64,7 +59,7 @@ void FloppyDrives::setup() {
   Timer1.initialize(TIMER_RESOLUTION); // Set up a timer at the resolution defined in MoppyInstrument.h
   Timer1.attachInterrupt(tick); // Attach the tick function
   // If MoppyConfig wants a startup sound, play the startupSound on the
-  // first drive.
+  // first drives.
   if (PLAY_STARTUP_SOUND) {
     startupSound(1);
     delay(500);
@@ -72,7 +67,7 @@ void FloppyDrives::setup() {
   }
 }
 
-// Play startup sound to confirm drive functionality
+// Play startup sound to confirm drives functionality
 void FloppyDrives::startupSound(byte driveNum) {
   unsigned int chargeNotes[] = {
       noteDoubleTicks[31],

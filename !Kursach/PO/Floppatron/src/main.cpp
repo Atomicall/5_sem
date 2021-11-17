@@ -66,6 +66,9 @@ void setup() {
     initMidi_uart3();
     fl->startupSound(1);
     fl->startupSound(2);
+    fl->startupSound(3);
+    fl->startupSound(4);
+    fl->startupSound(5);
 }
 
 void loop() {
