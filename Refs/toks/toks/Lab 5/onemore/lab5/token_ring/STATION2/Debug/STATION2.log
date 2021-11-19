@@ -1,9 +1,0 @@
-﻿  stat2.cpp
-D:\Labs\5_sem\Refs\toks\toks\Lab 5\onemore\lab5\token_ring\STATION2\stat2.cpp(14,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Labs\5_sem\Refs\toks\toks\Lab 5\onemore\lab5\token_ring\STATION2\stat2.cpp(32,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Labs\5_sem\Refs\toks\toks\Lab 5\onemore\lab5\token_ring\STATION2\stat2.cpp(210,14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\Labs\5_sem\Refs\toks\toks\Lab 5\onemore\lab5\token_ring\STATION2\stat2.cpp(228,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\Labs\5_sem\Refs\toks\toks\Lab 5\onemore\lab5\token_ring\STATION2\stat2.cpp(141,9): warning C4101: cbWritten1: неиспользованная локальная переменная
-D:\Labs\5_sem\Refs\toks\toks\Lab 5\onemore\lab5\token_ring\STATION2\stat2.cpp(144,9): warning C4101: szPipeName1: неиспользованная локальная переменная
-D:\Labs\5_sem\Refs\toks\toks\Lab 5\onemore\lab5\token_ring\STATION2\stat2.cpp(164,9): warning C4101: fConnected2: неиспользованная локальная переменная
-  STATION2.vcxproj -> D:\Labs\5_sem\Refs\toks\toks\Lab 5\onemore\lab5\token_ring\Debug\STATION2.exe
