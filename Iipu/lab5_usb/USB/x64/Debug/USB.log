@@ -1,0 +1,7 @@
+﻿  USB.cpp
+C:\Users\Vlad\Desktop\5_refs\v2\USB\USB.cpp(1,1): warning C4005: UNICODE: изменение макроопределения
+C:\Users\Vlad\Desktop\5_refs\v2\USB\USB.cpp : message : см. предыдущее определение "UNICODE"
+C:\Users\Vlad\Desktop\5_refs\v2\USB\USB.cpp(52): warning C4715: handleToName: значение возвращается не при всех путях выполнения
+C:\Users\Vlad\Desktop\5_refs\v2\USB\USB.cpp(59): warning C4715: handleToFriendlyName: значение возвращается не при всех путях выполнения
+C:\Users\Vlad\Desktop\5_refs\v2\USB\USB.cpp(74): warning C4715: nameToHandle: значение возвращается не при всех путях выполнения
+  USB.vcxproj -> C:\Users\Vlad\Desktop\5_refs\v2\x64\Debug\USB.exe
