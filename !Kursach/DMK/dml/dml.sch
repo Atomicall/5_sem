@@ -161,8 +161,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 10350 1400
 	5    10350 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 1500 2050 1500
 $Comp
 L Device:C_Small C1
 U 1 1 6183595C
@@ -439,8 +437,6 @@ NoConn ~ 1350 3200
 NoConn ~ 1350 3100
 NoConn ~ 1950 1600
 Wire Wire Line
-	2050 1500 2050 1600
-Wire Wire Line
 	1750 1250 1750 1600
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
@@ -634,7 +630,6 @@ Wire Wire Line
 NoConn ~ 1350 2600
 NoConn ~ 1350 2000
 NoConn ~ 1350 2100
-NoConn ~ 1350 2300
 Text Label 3900 4400 2    50   ~ 0
 5V_Conn
 Text Label 4700 3050 0    50   ~ 0
@@ -759,7 +754,7 @@ Text Label 6550 4300 2    50   ~ 0
 5V_Conn
 Text Label 10200 850  2    50   ~ 0
 5V_Conn
-Text Label 2100 1500 0    50   ~ 0
+Text Label 3500 2550 0    50   ~ 0
 5V_Ard
 Text Label 4750 2900 0    50   ~ 0
 5V_Ard
@@ -831,4 +826,71 @@ Wire Wire Line
 	10000 5500 10000 5800
 Wire Wire Line
 	9100 5800 10000 5800
+$Comp
+L Transistor_FET:AO3401A Q1
+U 1 1 61AD9259
+P 3300 2200
+F 0 "Q1" H 3505 2154 50  0000 L CNN
+F 1 "AO3401A" H 3505 2245 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3500 2125 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 3300 2200 50  0001 L CNN
+	1    3300 2200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3400 2550 3400 2400
+$Comp
+L Device:R_Small R7
+U 1 1 61AED0AD
+P 3000 1950
+F 0 "R7" H 3059 1996 50  0000 L CNN
+F 1 "2.2k" H 3059 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3000 1950 50  0001 C CNN
+F 3 "~" H 3000 1950 50  0001 C CNN
+	1    3000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2200 3000 2200
+Wire Wire Line
+	2050 1600 2900 1600
+Wire Wire Line
+	2900 1600 2900 1800
+Text Label 2950 2600 2    50   ~ 0
+Keyboard_en
+Wire Wire Line
+	2950 2300 2950 2200
+Wire Wire Line
+	2950 2200 3000 2200
+Connection ~ 3000 2200
+$Comp
+L Device:R_Small R2
+U 1 1 61B0FCFB
+P 2950 2400
+F 0 "R2" H 3009 2446 50  0000 L CNN
+F 1 "2.2k" H 3009 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2950 2400 50  0001 C CNN
+F 3 "~" H 2950 2400 50  0001 C CNN
+	1    2950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1800 3000 1800
+Wire Wire Line
+	3000 1850 3000 1800
+Connection ~ 3000 1800
+Wire Wire Line
+	3000 1800 3400 1800
+Wire Wire Line
+	3000 2050 3000 2200
+Wire Wire Line
+	3400 1800 3400 2000
+Wire Wire Line
+	2950 2500 2950 2600
+Wire Wire Line
+	3500 2550 3400 2550
+Text Label 1050 2300 2    50   ~ 0
+Keyboard_en
+Wire Wire Line
+	1050 2300 1350 2300
 $EndSCHEMATC
