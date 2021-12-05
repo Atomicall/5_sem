@@ -1,4 +1,163 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:AO3401A Q1
+U 1 1 61A7D904
+P 3700 1550
+F 0 "Q1" H 3905 1596 50  0000 L CNN
+F 1 "AO3401A" H 3905 1505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 1475 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 3700 1550 50  0001 L CNN
+	1    3700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 61A7F626
+P 2150 1250
+F 0 "J1" H 2258 1431 50  0000 C CNN
+F 1 "bat" H 2258 1340 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 2150 1250 50  0001 C CNN
+F 3 "~" H 2150 1250 50  0001 C CNN
+	1    2150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 61A811FE
+P 2150 1600
+F 0 "J2" H 2258 1781 50  0000 C CNN
+F 1 "usb" H 2258 1690 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 2150 1600 50  0001 C CNN
+F 3 "~" H 2150 1600 50  0001 C CNN
+	1    2150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 61A81FAA
+P 4900 1950
+F 0 "J3" H 4872 1832 50  0000 R CNN
+F 1 "out" H 4872 1923 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 4900 1950 50  0001 C CNN
+F 3 "~" H 4900 1950 50  0001 C CNN
+	1    4900 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61A822A3
+P 2950 1700
+F 0 "R1" H 3009 1746 50  0000 L CNN
+F 1 "2.2k" H 3009 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 2950 1700 50  0001 C CNN
+F 3 "~" H 2950 1700 50  0001 C CNN
+	1    2950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_Small D1
+U 1 1 61A839BD
+P 3350 1850
+F 0 "D1" H 3300 2050 50  0000 C CNN
+F 1 "ss14" H 3300 1950 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" V 3350 1850 50  0001 C CNN
+F 3 "~" V 3350 1850 50  0001 C CNN
+	1    3350 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 1600 2950 1550
+$Comp
+L power:GND #PWR03
+U 1 1 61A8630F
+P 2950 1950
+F 0 "#PWR03" H 2950 1700 50  0001 C CNN
+F 1 "GND" H 2955 1777 50  0000 C CNN
+F 2 "" H 2950 1950 50  0001 C CNN
+F 3 "" H 2950 1950 50  0001 C CNN
+	1    2950 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1950 2950 1800
+Wire Wire Line
+	2350 1250 3800 1250
+Wire Wire Line
+	3800 1250 3800 1350
+Wire Wire Line
+	3800 1750 3800 1850
+Wire Wire Line
+	3800 1850 4700 1850
+Wire Wire Line
+	2650 1600 2650 1550
+Wire Wire Line
+	2350 1600 2650 1600
+Wire Wire Line
+	2650 1550 2950 1550
+Wire Wire Line
+	3500 1550 3350 1550
+Connection ~ 2950 1550
+Wire Wire Line
+	3350 1750 3350 1550
+Connection ~ 3350 1550
+Wire Wire Line
+	3350 1550 2950 1550
+Wire Wire Line
+	3350 1950 3800 1950
+Wire Wire Line
+	3800 1950 3800 1850
+Connection ~ 3800 1850
+$Comp
+L power:GND #PWR02
+U 1 1 61A8E83F
+P 2450 1700
+F 0 "#PWR02" H 2450 1450 50  0001 C CNN
+F 1 "GND" H 2455 1527 50  0000 C CNN
+F 2 "" H 2450 1700 50  0001 C CNN
+F 3 "" H 2450 1700 50  0001 C CNN
+	1    2450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1700 2350 1700
+$Comp
+L power:GND #PWR01
+U 1 1 61A8F332
+P 2450 1350
+F 0 "#PWR01" H 2450 1100 50  0001 C CNN
+F 1 "GND" H 2455 1177 50  0000 C CNN
+F 2 "" H 2450 1350 50  0001 C CNN
+F 3 "" H 2450 1350 50  0001 C CNN
+	1    2450 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1350 2350 1350
+$Comp
+L power:GND #PWR04
+U 1 1 61A8FC9E
+P 4700 2000
+F 0 "#PWR04" H 4700 1750 50  0001 C CNN
+F 1 "GND" H 4705 1827 50  0000 C CNN
+F 2 "" H 4700 2000 50  0001 C CNN
+F 3 "" H 4700 2000 50  0001 C CNN
+	1    4700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2000 4700 1950
 $EndSCHEMATC
